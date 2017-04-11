@@ -1,9 +1,9 @@
 // TODO Axis scale
-define(function (require) {
+
 
     var Polar = require('./Polar');
     var numberUtil = require('../../util/number');
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
 
     var axisHelper = require('../../coord/axisHelper');
     var niceScaleExtent = axisHelper.niceScaleExtent;
@@ -146,4 +146,3 @@ define(function (require) {
     };
 
     require('../../CoordinateSystem').register('polar', polarCreator);
-});

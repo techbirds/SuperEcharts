@@ -1,4 +1,4 @@
-define(function (require) {
+
 
     var echarts = require('../echarts');
 
@@ -12,4 +12,3 @@ define(function (require) {
     echarts.registerVisual(require('./candlestick/candlestickVisual'));
     echarts.registerLayout(require('./candlestick/candlestickLayout'));
 
-});

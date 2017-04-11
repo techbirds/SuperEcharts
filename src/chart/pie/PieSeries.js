@@ -1,9 +1,8 @@
-define(function(require) {
+'use strict';
 
-    'use strict';
 
     var List = require('../../data/List');
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
     var modelUtil = require('../../util/model');
     var completeDimensions = require('../../data/helper/completeDimensions');
 
@@ -136,5 +135,4 @@ define(function(require) {
 
     zrUtil.mixin(PieSeries, dataSelectableMixin);
 
-    return PieSeries;
-});
+    module.exports = PieSeries;

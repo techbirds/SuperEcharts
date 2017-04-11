@@ -1,9 +1,9 @@
 /**
  * @file History manager.
  */
-define(function(require) {
 
-    var zrUtil = require('zrender/core/util');
+
+    var zrUtil = require('zrender/lib/core/util');
     var each = zrUtil.each;
 
     var ATTR = '\0_ec_hist_store';
@@ -104,6 +104,5 @@ define(function(require) {
         return store;
     }
 
-    return history;
+    module.exports = history;
 
-});

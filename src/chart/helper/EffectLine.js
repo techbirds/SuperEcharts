@@ -2,15 +2,15 @@
  * Provide effect for line
  * @module echarts/chart/helper/EffectLine
  */
-define(function (require) {
+
 
     var graphic = require('../../util/graphic');
     var Line = require('./Line');
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
     var symbolUtil = require('../../util/symbol');
-    var vec2 = require('zrender/core/vector');
+    var vec2 = require('zrender/lib/core/vector');
 
-    var curveUtil = require('zrender/core/curve');
+    var curveUtil = require('zrender/lib/core/curve');
 
     /**
      * @constructor
@@ -184,5 +184,4 @@ define(function (require) {
 
     zrUtil.inherits(EffectLine, graphic.Group);
 
-    return EffectLine;
-});
+    module.exports = EffectLine;

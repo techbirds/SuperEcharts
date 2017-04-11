@@ -1,9 +1,9 @@
-define(function(require) {
+
 
     var formatUtil = require('./format');
     var nubmerUtil = require('./number');
     var Model = require('../model/Model');
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
     var each = zrUtil.each;
     var isObject = zrUtil.isObject;
 
@@ -564,5 +564,4 @@ define(function(require) {
         return obj && obj.hasOwnProperty(prop);
     }
 
-    return modelUtil;
-});
+    module.exports = modelUtil;

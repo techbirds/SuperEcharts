@@ -1,6 +1,6 @@
-define(function (require) {
 
-    var zrUtil = require('zrender/core/util');
+
+    var zrUtil = require('zrender/lib/core/util');
 
     var defaultOption = {
         show: true,
@@ -144,10 +144,9 @@ define(function (require) {
     }, valueAxis);
     logAxis.scale = true;
 
-    return {
+    module.exports = {
         categoryAxis: categoryAxis,
         valueAxis: valueAxis,
         timeAxis: timeAxis,
         logAxis: logAxis
     };
-});

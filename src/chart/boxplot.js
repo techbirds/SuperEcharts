@@ -1,4 +1,4 @@
-define(function (require) {
+
 
     var echarts = require('../echarts');
 
@@ -8,4 +8,3 @@ define(function (require) {
     echarts.registerVisual(require('./boxplot/boxplotVisual'));
     echarts.registerLayout(require('./boxplot/boxplotLayout'));
 
-});

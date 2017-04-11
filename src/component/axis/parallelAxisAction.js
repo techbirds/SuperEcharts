@@ -1,4 +1,4 @@
-define(function (require) {
+
 
     var echarts = require('../../echarts');
 
@@ -33,4 +33,3 @@ define(function (require) {
         );
 
     });
-});

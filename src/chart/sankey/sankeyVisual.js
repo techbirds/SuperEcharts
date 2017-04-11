@@ -2,12 +2,12 @@
  * @file Visual encoding for sankey view
  * @author  Deqing Li(annong035@gmail.com)
  */
-define(function (require) {
+
 
     var VisualMapping = require('../../visual/VisualMapping');
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
 
-    return function (ecModel, payload) {
+    module.exports = function (ecModel, payload) {
         ecModel.eachSeriesByType('sankey', function (seriesModel) {
             var graph = seriesModel.getGraph();
             var nodes = graph.nodes;
@@ -39,4 +39,4 @@ define(function (require) {
 
         });
     };
-});
+

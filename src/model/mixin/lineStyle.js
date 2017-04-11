@@ -1,4 +1,4 @@
-define(function (require) {
+
     var getLineStyle = require('./makeStyleMapper')(
         [
             ['lineWidth', 'width'],
@@ -10,7 +10,7 @@ define(function (require) {
             ['shadowColor']
         ]
     );
-    return {
+    module.exports = {
         getLineStyle: function (excludes) {
             var style = getLineStyle.call(this, excludes);
             var lineDash = this.getLineDash(style.lineWidth);
@@ -29,4 +29,3 @@ define(function (require) {
                 : (lineType === 'dashed' ? [dashSize, dashSize] : [dotSize, dotSize]);
         }
     };
-});

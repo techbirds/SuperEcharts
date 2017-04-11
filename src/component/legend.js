@@ -1,7 +1,7 @@
 /**
  * Legend component entry file8
  */
-define(function (require) {
+
 
     require('./legend/LegendModel');
     require('./legend/legendAction');
@@ -10,4 +10,3 @@ define(function (require) {
     var echarts = require('../echarts');
     // Series Filter
     echarts.registerProcessor(require('./legend/legendFilter'));
-});

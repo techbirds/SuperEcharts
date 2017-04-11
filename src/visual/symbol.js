@@ -1,6 +1,6 @@
-define(function (require) {
 
-    return function (seriesType, defaultSymbolType, legendSymbol, ecModel, api) {
+
+    module.exports = function (seriesType, defaultSymbolType, legendSymbol, ecModel, api) {
 
         // Encoding visual for all series include which is filtered for legend drawing
         ecModel.eachRawSeriesByType(seriesType, function (seriesModel) {
@@ -41,4 +41,3 @@ define(function (require) {
             }
         });
     };
-});

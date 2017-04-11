@@ -2,7 +2,7 @@
  * // Scale class management
  * @module echarts/scale/Scale
  */
-define(function (require) {
+
 
     var clazzUtil = require('../util/clazz');
 
@@ -119,5 +119,4 @@ define(function (require) {
         registerWhenExtend: true
     });
 
-    return Scale;
-});
+    module.exports = Scale;

@@ -1,4 +1,4 @@
-define(function (require) {
+
 
     var echarts = require('../../echarts');
     var roamHelper = require('../../action/roamHelper');
@@ -32,4 +32,3 @@ define(function (require) {
                 && seriesModel.setZoom(res.zoom);
         });
     });
-});

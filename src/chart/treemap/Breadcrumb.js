@@ -1,8 +1,8 @@
- define(function(require) {
+ 
 
     var graphic = require('../../util/graphic');
     var layout = require('../../util/layout');
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
     var helper = require('./helper');
 
     var TEXT_PADDING = 8;
@@ -167,5 +167,4 @@
         };
     }
 
-    return Breadcrumb;
-});
+    module.exports = Breadcrumb;

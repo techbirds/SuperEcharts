@@ -1,4 +1,4 @@
-define(function (require) {
+
 
 
     var getBarItemStyle = require('../../model/mixin/makeStyleMapper')(
@@ -16,7 +16,7 @@ define(function (require) {
             ['shadowColor']
         ]
     );
-    return {
+    module.exports = {
         getBarItemStyle: function (excludes) {
             var style = getBarItemStyle.call(this, excludes);
             if (this.getBorderLineDash) {
@@ -26,4 +26,3 @@ define(function (require) {
             return style;
         }
     };
-});

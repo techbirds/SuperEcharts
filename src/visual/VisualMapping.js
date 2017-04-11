@@ -1,10 +1,10 @@
 /**
  * @file Visual mapping.
  */
-define(function (require) {
 
-    var zrUtil = require('zrender/core/util');
-    var zrColor = require('zrender/tool/color');
+
+    var zrUtil = require('zrender/lib/core/util');
+    var zrColor = require('zrender/lib/tool/color');
     var linearMap = require('../util/number').linearMap;
     var each = zrUtil.each;
     var isObject = zrUtil.isObject;
@@ -592,6 +592,5 @@ define(function (require) {
         return close ? a <= b : a < b;
     }
 
-    return VisualMapping;
+    module.exports = VisualMapping;
 
-});

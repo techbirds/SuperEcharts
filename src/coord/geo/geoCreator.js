@@ -1,9 +1,9 @@
-define(function (require) {
+
 
     var Geo = require('./Geo');
 
     var layout = require('../../util/layout');
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
     var numberUtil = require('../../util/number');
 
     var mapDataStores = {};
@@ -274,5 +274,4 @@ define(function (require) {
 
     echarts.registerCoordinateSystem('geo', geoCreator);
 
-    return geoCreator;
-});
+    module.exports = geoCreator;

@@ -1,11 +1,10 @@
-define(function(require) {
+'use strict';
 
-    'use strict';
 
     var List = require('../../data/List');
     var completeDimensions = require('../../data/helper/completeDimensions');
     var WhiskerBoxDraw = require('../helper/WhiskerBoxDraw');
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
 
     function getItemValue(item) {
         return item.value == null ? item : item.value;
@@ -133,8 +132,7 @@ define(function(require) {
         }
     };
 
-    return {
+    module.exports = {
         seriesModelMixin: seriesModelMixin,
         viewMixin: viewMixin
     };
-});

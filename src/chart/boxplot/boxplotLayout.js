@@ -1,11 +1,11 @@
-define(function (require) {
 
-    var zrUtil = require('zrender/core/util');
+
+    var zrUtil = require('zrender/lib/core/util');
     var numberUtil = require('../../util/number');
     var parsePercent = numberUtil.parsePercent;
     var each = zrUtil.each;
 
-    return function (ecModel) {
+    module.exports = function (ecModel) {
 
         var groupResult = groupSeriesByAxis(ecModel);
 
@@ -178,4 +178,3 @@ define(function (require) {
         });
     }
 
-});

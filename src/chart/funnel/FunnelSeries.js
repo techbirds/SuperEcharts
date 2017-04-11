@@ -1,6 +1,5 @@
-define(function(require) {
+'use strict';
 
-    'use strict';
 
     var List = require('../../data/List');
     var modelUtil = require('../../util/model');
@@ -97,5 +96,4 @@ define(function(require) {
         }
     });
 
-    return FunnelSeries;
-});
+    module.exports = FunnelSeries;

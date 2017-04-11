@@ -1,4 +1,4 @@
-define(function (require) {
+
     // List layout
     var layout = require('../../util/layout');
     var formatUtil = require('../../util/format');
@@ -15,7 +15,7 @@ define(function (require) {
         );
     }
 
-    return {
+    module.exports = {
         /**
          * Layout list like component.
          * It will box layout each items in group of component and then position the whole group in the viewport
@@ -62,4 +62,3 @@ define(function (require) {
             group.add(rect);
         }
     };
-});

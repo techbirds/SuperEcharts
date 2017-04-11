@@ -1,7 +1,7 @@
-define(function (require) {
+
 
     var AxisBuilder = require('./AxisBuilder');
-    var zrUtil =  require('zrender/core/util');
+    var zrUtil =  require('zrender/lib/core/util');
     var graphic = require('../../util/graphic');
     var getInterval = AxisBuilder.getInterval;
     var ifIgnoreOnTick = AxisBuilder.ifIgnoreOnTick;
@@ -156,6 +156,5 @@ define(function (require) {
         return layout;
     }
 
-    return AxisView;
+    module.exports = AxisView;
 
-});

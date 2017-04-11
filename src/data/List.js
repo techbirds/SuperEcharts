@@ -2,7 +2,7 @@
  * List for data storage
  * @module echarts/data/List
  */
-define(function (require) {
+
 
     var UNDEFINED = 'undefined';
     var globalObj = typeof window === 'undefined' ? global : window;
@@ -23,7 +23,7 @@ define(function (require) {
     var Model = require('../model/Model');
     var DataDiffer = require('./DataDiffer');
 
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
     var modelUtil = require('../util/model');
     var isObject = zrUtil.isObject;
 
@@ -1136,5 +1136,4 @@ define(function (require) {
     // Methods that change indices of this list should be listed here.
     listProto.CHANGABLE_METHODS = ['filterSelf'];
 
-    return List;
-});
+    module.exports = List;

@@ -1,5 +1,5 @@
-define(function(require) {
-    'use strict';
+'use strict';
+
 
     var history = require('../../dataZoom/history');
 
@@ -35,5 +35,4 @@ define(function(require) {
         }
     );
 
-    return Restore;
-});
+    module.exports = Restore;

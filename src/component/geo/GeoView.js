@@ -1,10 +1,9 @@
-define(function (require) {
+'use strict';
 
-    'use strict';
 
     var MapDraw = require('../helper/MapDraw');
 
-    return require('../../echarts').extendComponentView({
+    module.exports = require('../../echarts').extendComponentView({
 
         type: 'geo',
 
@@ -39,4 +38,3 @@ define(function (require) {
         }
 
     });
-});

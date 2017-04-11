@@ -1,7 +1,7 @@
-define(function(require) {
+
 
     var VisualMapView = require('./VisualMapView');
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
     var graphic = require('../../util/graphic');
     var symbolCreators = require('../../util/symbol');
     var layout = require('../../util/layout');
@@ -215,5 +215,5 @@ define(function(require) {
         }
     });
 
-    return PiecewiseVisualMapView;
-});
+    module.exports = PiecewiseVisualMapView;
+

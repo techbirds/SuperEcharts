@@ -1,8 +1,7 @@
-define(function (require) {
+'use strict';
 
-    'use strict';
 
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
     var graphic = require('../../util/graphic');
 
     zrUtil.extend(require('../../model/Model').prototype, require('./barItemStyle'));
@@ -18,7 +17,7 @@ define(function (require) {
         layout.height -= signY * lineWidth;
     }
 
-    return require('../../echarts').extendChartView({
+    module.exports = require('../../echarts').extendChartView({
 
         type: 'bar',
 
@@ -214,4 +213,3 @@ define(function (require) {
             }
         }
     });
-});

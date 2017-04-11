@@ -1,7 +1,7 @@
 /**
  * Brush component entry
  */
-define(function (require) {
+
 
     require('../echarts').registerPreprocessor(
         require('./brush/preprocessor')
@@ -14,4 +14,3 @@ define(function (require) {
 
     require('./toolbox/feature/Brush');
 
-});

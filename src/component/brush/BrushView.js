@@ -1,11 +1,11 @@
-define(function (require) {
 
-    var zrUtil = require('zrender/core/util');
+
+    var zrUtil = require('zrender/lib/core/util');
     var BrushController = require('../helper/BrushController');
     var echarts = require('../../echarts');
     var brushHelper = require('../helper/brushHelper');
 
-    return echarts.extendComponentView({
+    module.exports = echarts.extendComponentView({
 
         type: 'brush',
 
@@ -98,4 +98,3 @@ define(function (require) {
             .updateCovers(brushModel.areas.slice());
     }
 
-});

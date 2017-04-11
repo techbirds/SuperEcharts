@@ -1,14 +1,14 @@
-define(function (require) {
+
 
     var featureManager = require('./featureManager');
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
     var graphic = require('../../util/graphic');
     var Model = require('../../model/Model');
     var DataDiffer = require('../../data/DataDiffer');
     var listComponentHelper = require('../helper/listComponent');
-    var textContain = require('zrender/contain/text');
+    var textContain = require('zrender/lib/contain/text');
 
-    return require('../../echarts').extendComponentView({
+    module.exports = require('../../echarts').extendComponentView({
 
         type: 'toolbox',
 
@@ -246,4 +246,3 @@ define(function (require) {
         return featureName.indexOf('my') === 0;
     }
 
-});

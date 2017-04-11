@@ -4,11 +4,11 @@
  * @module echarts/component/helper/BrushController
  */
 
-define(function (require) {
 
-    var Eventful = require('zrender/mixin/Eventful');
-    var zrUtil = require('zrender/core/util');
-    var BoundingRect = require('zrender/core/BoundingRect');
+
+    var Eventful = require('zrender/lib/mixin/Eventful');
+    var zrUtil = require('zrender/lib/core/util');
+    var BoundingRect = require('zrender/lib/core/BoundingRect');
     var graphic = require('../../util/graphic');
     var interactionMutex = require('./interactionMutex');
     var DataDiffer = require('../../data/DataDiffer');
@@ -998,5 +998,4 @@ define(function (require) {
         };
     }
 
-    return BrushController;
-});
+    module.exports = BrushController;

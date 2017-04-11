@@ -4,7 +4,7 @@
  * @module echarts/data/KDTree
  * @author Yi Shen(https://github.com/pissang)
  */
-define(function (require) {
+
 
     var quickSelect = require('./quickSelect');
 
@@ -243,5 +243,4 @@ define(function (require) {
         return output;
     };
 
-    return KDTree;
-});
+    module.exports = KDTree;

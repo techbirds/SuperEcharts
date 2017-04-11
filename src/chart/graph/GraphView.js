@@ -1,5 +1,5 @@
 
-define(function (require) {
+
 
     var SymbolDraw = require('../helper/SymbolDraw');
     var LineDraw = require('../helper/LineDraw');
@@ -7,7 +7,7 @@ define(function (require) {
 
     var graphic = require('../../util/graphic');
     var adjustEdge = require('./adjustEdge');
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
 
     var nodeOpacityPath = ['itemStyle', 'normal', 'opacity'];
     var lineOpacityPath = ['lineStyle', 'normal', 'opacity'];
@@ -322,4 +322,3 @@ define(function (require) {
             this._lineDraw && this._lineDraw.remove();
         }
     });
-});

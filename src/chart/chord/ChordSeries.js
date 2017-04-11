@@ -1,4 +1,4 @@
-define(function (require) {
+
 
     var SeriesModel = require('../../model/Series');
     var createGraphFromNodeEdge = require('../helper/createGraphFromNodeEdge');
@@ -60,5 +60,4 @@ define(function (require) {
         }
     });
 
-    return ChordSeries;
-});
+    module.exports = ChordSeries;

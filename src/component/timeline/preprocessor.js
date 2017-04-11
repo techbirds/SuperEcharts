@@ -1,11 +1,11 @@
 /**
  * @file Timeline preprocessor
  */
-define(function(require) {
 
-    var zrUtil = require('zrender/core/util');
 
-    return function (option) {
+    var zrUtil = require('zrender/lib/core/util');
+
+    module.exports = function (option) {
         var timelineOpt = option && option.timeline;
 
         if (!zrUtil.isArray(timelineOpt)) {
@@ -83,4 +83,3 @@ define(function(require) {
         return obj.hasOwnProperty(attr);
     }
 
-});

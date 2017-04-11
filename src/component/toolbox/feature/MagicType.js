@@ -1,7 +1,7 @@
-define(function(require) {
-    'use strict';
+'use strict';
 
-    var zrUtil = require('zrender/core/util');
+
+    var zrUtil = require('zrender/lib/core/util');
 
     function MagicType(model) {
         this.model = model;
@@ -171,5 +171,4 @@ define(function(require) {
 
     require('../featureManager').register('magicType', MagicType);
 
-    return MagicType;
-});
+    module.exports = MagicType;

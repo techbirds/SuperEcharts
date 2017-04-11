@@ -1,8 +1,7 @@
-define(function(require) {
+'use strict';
 
-    'use strict';
 
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
     var numberUtil = require('../util/number');
     var parsePercent = numberUtil.parsePercent;
 
@@ -238,5 +237,4 @@ define(function(require) {
         }, this);
     }
 
-    return barLayoutGrid;
-});
+    module.exports = barLayoutGrid;

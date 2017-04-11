@@ -1,8 +1,8 @@
-define(function (require) {
+
 
     var modelUtil = require('../../util/model');
-    var zrUtil = require('zrender/core/util');
-    var env = require('zrender/core/env');
+    var zrUtil = require('zrender/lib/core/util');
+    var env = require('zrender/lib/core/env');
 
     var formatUtil = require('../../util/format');
     var addCommas = formatUtil.addCommas;
@@ -129,5 +129,4 @@ define(function (require) {
 
     zrUtil.mixin(MarkerModel, modelUtil.dataFormatMixin);
 
-    return MarkerModel;
-});
+    module.exports = MarkerModel;

@@ -1,9 +1,8 @@
+'use strict';
 // FIXME step not support polar
-define(function(require) {
 
-    'use strict';
 
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
     var SymbolDraw = require('../helper/SymbolDraw');
     var Symbol = require('../helper/Symbol');
     var lineAnimationDiff = require('./lineAnimationDiff');
@@ -283,7 +282,7 @@ define(function(require) {
         return gradient;
     }
 
-    return ChartView.extend({
+    module.exports = ChartView.extend({
 
         type: 'line',
 
@@ -699,4 +698,3 @@ define(function(require) {
             this._data = null;
         }
     });
-});

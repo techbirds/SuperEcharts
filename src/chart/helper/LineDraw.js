@@ -1,7 +1,7 @@
 /**
  * @module echarts/chart/helper/LineDraw
  */
-define(function (require) {
+
 
     var graphic = require('../../util/graphic');
     var LineGroup = require('./Line');
@@ -90,5 +90,4 @@ define(function (require) {
         this.group.removeAll();
     };
 
-    return LineDraw;
-});
+    module.exports = LineDraw;

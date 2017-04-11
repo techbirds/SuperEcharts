@@ -1,6 +1,6 @@
-define(function (require) {
+
     var formatUtil = require('../../util/format');
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
 
     var helper = {};
 
@@ -119,5 +119,4 @@ define(function (require) {
         }
     };
 
-    return helper;
-});
+    module.exports = helper;

@@ -3,7 +3,7 @@
  * @module echarts/util/number
  */
 
-define(function (require) {
+
 
     var number = {};
 
@@ -313,5 +313,4 @@ define(function (require) {
         }
     };
 
-    return number;
-});
+    module.exports = number;

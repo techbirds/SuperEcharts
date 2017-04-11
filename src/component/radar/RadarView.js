@@ -1,14 +1,14 @@
-define(function (require) {
+
 
     var AxisBuilder = require('../axis/AxisBuilder');
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
     var graphic = require('../../util/graphic');
 
     var axisBuilderAttrs = [
         'axisLine', 'axisLabel', 'axisTick', 'axisName'
     ];
 
-    return require('../../echarts').extendComponentView({
+    module.exports = require('../../echarts').extendComponentView({
 
         type: 'radar',
 
@@ -171,4 +171,3 @@ define(function (require) {
 
         }
     });
-});

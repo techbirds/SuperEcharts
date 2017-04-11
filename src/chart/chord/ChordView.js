@@ -1,9 +1,9 @@
-define(function (require) {
+
 
     var RibbonPath = require('./Ribbon');
     var graphic = require('../../util/graphic');
 
-    return require('../../echarts').extendChartView({
+    module.exports = require('../../echarts').extendChartView({
 
         type: 'chord',
 
@@ -74,4 +74,3 @@ define(function (require) {
 
         dispose: function () {}
     });
-});

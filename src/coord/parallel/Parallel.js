@@ -2,14 +2,14 @@
  * Parallel Coordinates
  * <https://en.wikipedia.org/wiki/Parallel_coordinates>
  */
-define(function(require) {
+
 
     var layout = require('../../util/layout');
     var axisHelper = require('../../coord/axisHelper');
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
     var ParallelAxis = require('./ParallelAxis');
     var graphic = require('../../util/graphic');
-    var matrix = require('zrender/core/matrix');
+    var matrix = require('zrender/lib/core/matrix');
 
     var each = zrUtil.each;
 
@@ -388,5 +388,4 @@ define(function(require) {
 
     };
 
-    return Parallel;
-});
+    module.exports = Parallel;

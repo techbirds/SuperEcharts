@@ -1,10 +1,10 @@
-define(function (require) {
+
 
     var parseGeoJson = require('./parseGeoJson');
 
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
 
-    var BoundingRect = require('zrender/core/BoundingRect');
+    var BoundingRect = require('zrender/lib/core/BoundingRect');
 
     var View = require('../View');
 
@@ -257,5 +257,4 @@ define(function (require) {
         return coordSys === this ? coordSys[methodName](value) : null;
     }
 
-    return Geo;
-});
+    module.exports = Geo;

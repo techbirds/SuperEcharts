@@ -2,14 +2,14 @@
  * @file  The file used to draw themeRiver view
  * @author  Deqing Li(annong035@gmail.com)
  */
-define(function (require) {
+
 
     var poly = require('../line/poly');
     var graphic = require('../../util/graphic');
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
     var DataDiffer = require('../../data/DataDiffer');
 
-    return require('../../echarts').extendChartView({
+    module.exports = require('../../echarts').extendChartView({
 
         type: 'themeRiver',
 
@@ -177,4 +177,4 @@ define(function (require) {
         return rectEl;
     }
 
-});
+

@@ -1,7 +1,7 @@
-define(function (require) {
+
 
     var featureManager = require('./featureManager');
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
 
     var ToolboxModel = require('../../echarts').extendComponentModel({
 
@@ -67,5 +67,4 @@ define(function (require) {
         }
     });
 
-    return ToolboxModel;
-});
+    module.exports = ToolboxModel;

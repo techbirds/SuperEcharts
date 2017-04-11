@@ -1,12 +1,12 @@
 /**
  * @file Data range visual coding.
  */
-define(function (require) {
+
 
     var echarts = require('../../echarts');
     var visualSolution = require('../../visual/visualSolution');
     var VisualMapping = require('../../visual/VisualMapping');
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
 
     echarts.registerVisual(echarts.PRIORITY.VISUAL.COMPONENT, function (ecModel) {
         ecModel.eachComponent('visualMap', function (visualMapModel) {
@@ -81,4 +81,4 @@ define(function (require) {
         }
     }
 
-});
+

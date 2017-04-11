@@ -1,4 +1,4 @@
-define(function (require) {
+
 
     require('../coord/geo/GeoModel');
 
@@ -9,7 +9,7 @@ define(function (require) {
     require('../action/geoRoam');
 
     var echarts = require('../echarts');
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
 
     function makeAction(method, actionInfo) {
         actionInfo.update = 'updateView';
@@ -46,4 +46,3 @@ define(function (require) {
         type: 'geoUnSelect',
         event: 'geounselected'
     });
-});

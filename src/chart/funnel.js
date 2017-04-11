@@ -1,6 +1,6 @@
-define(function (require) {
 
-    var zrUtil = require('zrender/core/util');
+
+    var zrUtil = require('zrender/lib/core/util');
     var echarts = require('../echarts');
 
     require('./funnel/FunnelSeries');
@@ -10,4 +10,3 @@ define(function (require) {
     echarts.registerLayout(require('./funnel/funnelLayout'));
 
     echarts.registerProcessor(zrUtil.curry(require('../processor/dataFilter'), 'funnel'));
-});

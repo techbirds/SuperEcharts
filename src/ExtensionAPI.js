@@ -1,8 +1,7 @@
-define(function(require) {
+'use strict';
 
-    'use strict';
 
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
 
     var echartsAPIList = [
         'getDom', 'getZr', 'getWidth', 'getHeight', 'dispatchAction', 'isDisposed',
@@ -15,5 +14,4 @@ define(function(require) {
         }, this);
     }
 
-    return ExtensionAPI;
-});
+    module.exports = ExtensionAPI;

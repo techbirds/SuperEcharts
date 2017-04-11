@@ -1,5 +1,5 @@
 // HINT Markpoint can't be used too much
-define(function (require) {
+
 
     require('./marker/MarkPointModel');
     require('./marker/MarkPointView');
@@ -8,4 +8,3 @@ define(function (require) {
         // Make sure markPoint component is enabled
         opt.markPoint = opt.markPoint || {};
     });
-});

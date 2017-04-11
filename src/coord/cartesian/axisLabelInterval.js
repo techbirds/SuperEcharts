@@ -1,14 +1,14 @@
+'use strict';
 /**
  * Helper function for axisLabelInterval calculation
  */
 
-define(function(require) {
-    'use strict';
 
-    var zrUtil = require('zrender/core/util');
+
+    var zrUtil = require('zrender/lib/core/util');
     var axisHelper = require('../axisHelper');
 
-    return function (axis) {
+    module.exports = function (axis) {
         var axisModel = axis.model;
         var labelModel = axisModel.getModel('axisLabel');
         var labelInterval = labelModel.get('interval');
@@ -23,4 +23,3 @@ define(function(require) {
             axis.isHorizontal()
         );
     };
-});

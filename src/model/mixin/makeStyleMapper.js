@@ -1,9 +1,9 @@
 // TODO Parse shadow style
 // TODO Only shallow path support
-define(function (require) {
-    var zrUtil = require('zrender/core/util');
 
-    return function (properties) {
+    var zrUtil = require('zrender/lib/core/util');
+
+    module.exports = function (properties) {
         // Normalize
         for (var i = 0; i < properties.length; i++) {
             if (!properties[i][1]) {
@@ -25,4 +25,3 @@ define(function (require) {
             return style;
         };
     };
-});

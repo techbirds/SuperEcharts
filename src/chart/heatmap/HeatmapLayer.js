@@ -5,10 +5,10 @@
  *
  * @module
  */
-define(function (require) {
+
 
     var GRADIENT_LEVELS = 256;
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
 
     /**
      * Heatmap Chart
@@ -144,5 +144,5 @@ define(function (require) {
         }
     };
 
-    return Heatmap;
-});
+    module.exports = Heatmap;
+

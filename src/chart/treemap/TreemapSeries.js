@@ -1,8 +1,8 @@
-define(function(require) {
+
 
     var SeriesModel = require('../../model/Series');
     var Tree = require('../../data/Tree');
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
     var Model = require('../../model/Model');
     var formatUtil = require('../../util/format');
     var helper = require('./helper');
@@ -10,7 +10,7 @@ define(function(require) {
     var addCommas = formatUtil.addCommas;
 
 
-    return SeriesModel.extend({
+    module.exports = SeriesModel.extend({
 
         type: 'series.treemap',
 
@@ -353,4 +353,3 @@ define(function(require) {
         return levels;
     }
 
-});

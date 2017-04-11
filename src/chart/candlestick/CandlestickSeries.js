@@ -1,8 +1,7 @@
-define(function(require) {
+'use strict';
 
-    'use strict';
 
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
     var SeriesModel = require('../../model/Series');
     var whiskerBoxCommon = require('../helper/whiskerBoxCommon');
     var formatUtil = require('../../util/format');
@@ -91,6 +90,5 @@ define(function(require) {
 
     zrUtil.mixin(CandlestickSeries, whiskerBoxCommon.seriesModelMixin, true);
 
-    return CandlestickSeries;
+    module.exports = CandlestickSeries;
 
-});

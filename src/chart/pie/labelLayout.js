@@ -1,9 +1,8 @@
+'use strict';
 // FIXME emphasis label position is not same with normal label position
-define(function (require) {
 
-    'use strict';
 
-    var textContain = require('zrender/contain/text');
+    var textContain = require('zrender/lib/contain/text');
 
     function adjustSingleSide(list, cx, cy, r, dir, viewWidth, viewHeight) {
         list.sort(function (a, b) {
@@ -133,7 +132,7 @@ define(function (require) {
         }
     }
 
-    return function (seriesModel, r, viewWidth, viewHeight) {
+    module.exports = function (seriesModel, r, viewWidth, viewHeight) {
         var data = seriesModel.getData();
         var labelLayoutList = [];
         var cx;
@@ -224,4 +223,3 @@ define(function (require) {
             avoidOverlap(labelLayoutList, cx, cy, r, viewWidth, viewHeight);
         }
     };
-});

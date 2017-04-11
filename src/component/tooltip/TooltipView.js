@@ -1,13 +1,13 @@
-define(function (require) {
+
 
     var TooltipContent = require('./TooltipContent');
     var graphic = require('../../util/graphic');
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
     var formatUtil = require('../../util/format');
     var numberUtil = require('../../util/number');
     var modelUtil = require('../../util/model');
     var parsePercent = numberUtil.parsePercent;
-    var env = require('zrender/core/env');
+    var env = require('zrender/lib/core/env');
     var Model = require('../../model/Model');
 
     function dataEqual(a, b) {
@@ -1253,4 +1253,3 @@ define(function (require) {
             api.off('hideTip', this._manuallyHideTip);
         }
     });
-});

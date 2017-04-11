@@ -1,8 +1,8 @@
-define(function (require) {
 
-    var zrUtil = require('zrender/core/util');
 
-    return function (option) {
+    var zrUtil = require('zrender/lib/core/util');
+
+    module.exports = function (option) {
         if (!option || !zrUtil.isArray(option.series)) {
             return;
         }
@@ -15,4 +15,3 @@ define(function (require) {
         });
     };
 
-});

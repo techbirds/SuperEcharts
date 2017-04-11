@@ -1,9 +1,8 @@
-define(function (require) {
 
-    return require('./DataZoomView').extend({
+
+    module.exports = require('./DataZoomView').extend({
 
         type: 'dataZoom.select'
 
     });
 
-});

@@ -1,7 +1,7 @@
 /**
  * Single coordinates system.
  */
-define(function (require) {
+
 
     var SingleAxis = require('./SingleAxis');
     var axisHelper = require('../axisHelper');
@@ -257,6 +257,5 @@ define(function (require) {
         }
     };
 
-    return Single;
+    module.exports = Single;
 
-});

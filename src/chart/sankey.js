@@ -1,4 +1,4 @@
-define(function (require) {
+
 
     var echarts = require('../echarts');
 
@@ -6,4 +6,3 @@ define(function (require) {
     require('./sankey/SankeyView');
     echarts.registerLayout(require('./sankey/sankeyLayout'));
     echarts.registerVisual(require('./sankey/sankeyVisual'));
-});

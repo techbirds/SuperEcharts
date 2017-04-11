@@ -1,4 +1,4 @@
-define(function (require) {
+
     var getItemStyle = require('./makeStyleMapper')(
         [
             ['fill', 'color'],
@@ -13,7 +13,7 @@ define(function (require) {
             ['textAlign']
         ]
     );
-    return {
+    module.exports = {
         getItemStyle: function (excludes) {
             var style = getItemStyle.call(this, excludes);
             var lineDash = this.getBorderLineDash();
@@ -27,4 +27,3 @@ define(function (require) {
                 : (lineType === 'dashed' ? [5, 5] : [1, 1]);
         }
     };
-});

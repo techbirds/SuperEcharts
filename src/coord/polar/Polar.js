@@ -1,9 +1,8 @@
+'use strict';
 /**
  * @module echarts/coord/polar/Polar
  */
-define(function(require) {
 
-    'use strict';
 
     var RadiusAxis = require('./RadiusAxis');
     var AngleAxis = require('./AngleAxis');
@@ -225,5 +224,4 @@ define(function(require) {
         }
     };
 
-    return Polar;
-});
+    module.exports = Polar;

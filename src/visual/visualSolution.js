@@ -1,9 +1,9 @@
 /**
  * @file Visual solution, for consistent option specification.
  */
-define(function(require) {
 
-    var zrUtil = require('zrender/core/util');
+
+    var zrUtil = require('zrender/lib/core/util');
     var VisualMapping = require('./VisualMapping');
     var each = zrUtil.each;
 
@@ -138,6 +138,5 @@ define(function(require) {
         }
     };
 
-    return visualSolution;
+    module.exports = visualSolution;
 
-});

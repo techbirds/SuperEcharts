@@ -1,14 +1,14 @@
 /**
  * @module echarts/coord/geo/Region
  */
-define(function (require) {
 
-    var polygonContain = require('zrender/contain/polygon');
 
-    var BoundingRect = require('zrender/core/BoundingRect');
+    var polygonContain = require('zrender/lib/contain/polygon');
 
-    var bbox = require('zrender/core/bbox');
-    var vec2 = require('zrender/core/vector');
+    var BoundingRect = require('zrender/lib/core/BoundingRect');
+
+    var bbox = require('zrender/lib/core/bbox');
+    var vec2 = require('zrender/lib/core/vector');
 
     /**
      * @param {string} name
@@ -123,5 +123,4 @@ define(function (require) {
         }
     };
 
-    return Region;
-});
+    module.exports = Region;

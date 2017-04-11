@@ -1,9 +1,9 @@
-define(function (require) {
 
-    var zrUtil = require('zrender/core/util');
+
+    var zrUtil = require('zrender/lib/core/util');
     var modelUtil = require('../../util/model');
 
-    return function (option) {
+    module.exports = function (option) {
         createParallelIfNeeded(option);
         mergeAxisOptionFromParallel(option);
     };
@@ -51,4 +51,3 @@ define(function (require) {
         });
     }
 
-});

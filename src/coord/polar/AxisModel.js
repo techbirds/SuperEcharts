@@ -1,8 +1,7 @@
-define(function(require) {
+'use strict';
 
-    'use strict';
 
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
     var ComponentModel = require('../../model/Component');
     var axisModelCreator = require('../axisModelCreator');
 
@@ -51,4 +50,3 @@ define(function(require) {
     axisModelCreator('angle', PolarAxisModel, getAxisType, polarAxisDefaultExtendedOption.angle);
     axisModelCreator('radius', PolarAxisModel, getAxisType, polarAxisDefaultExtendedOption.radius);
 
-});

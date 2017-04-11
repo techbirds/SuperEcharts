@@ -1,12 +1,12 @@
-define(function (require) {
 
-    var textContain = require('zrender/contain/text');
+
+    var textContain = require('zrender/lib/contain/text');
 
     function getShallow(model, path) {
         return model && model.getShallow(path);
     }
 
-    return {
+    module.exports = {
         /**
          * Get color property or get color from option.textStyle.color
          * @return {string}
@@ -48,4 +48,3 @@ define(function (require) {
             );
         }
     };
-});

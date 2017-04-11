@@ -1,6 +1,6 @@
-define(function (require) {
-    var vec2 = require('zrender/core/vector');
-    return function (seriesModel) {
+
+    var vec2 = require('zrender/lib/core/vector');
+    module.exports = function (seriesModel) {
         var coordSys = seriesModel.coordinateSystem;
         if (coordSys && coordSys.type !== 'view') {
             return;
@@ -55,4 +55,3 @@ define(function (require) {
             edge.setLayout([p1, p2, cp1]);
         });
     };
-});

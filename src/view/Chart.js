@@ -1,10 +1,10 @@
-define(function (require) {
 
-    var Group = require('zrender/container/Group');
+
+    var Group = require('zrender/lib/container/Group');
     var componentUtil = require('../util/component');
     var clazzUtil = require('../util/clazz');
     var modelUtil = require('../util/model');
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
 
     function Chart() {
 
@@ -139,5 +139,4 @@ define(function (require) {
     // Add capability of registerClass, getClass, hasClass, registerSubTypeDefaulter and so on.
     clazzUtil.enableClassManagement(Chart, {registerWhenExtend: true});
 
-    return Chart;
-});
+    module.exports = Chart;

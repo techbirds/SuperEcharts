@@ -1,6 +1,6 @@
-define(function (require) {
 
-    var zrUtil = require('zrender/core/util');
+
+    var zrUtil = require('zrender/lib/core/util');
     var symbolCreator = require('../../util/symbol');
     var graphic = require('../../util/graphic');
     var listComponentHelper = require('../helper/listComponent');
@@ -38,7 +38,7 @@ define(function (require) {
         }
     }
 
-    return require('../../echarts').extendComponentView({
+    module.exports = require('../../echarts').extendComponentView({
 
         type: 'legend',
 
@@ -262,4 +262,3 @@ define(function (require) {
             return itemGroup;
         }
     });
-});

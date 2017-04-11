@@ -1,8 +1,8 @@
-define(function(require) {
-    'use strict';
+'use strict';
+
 
     var graphic = require('../util/graphic');
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
     var echarts = require('../echarts');
 
     require('../coord/cartesian/Grid');
@@ -36,4 +36,3 @@ define(function(require) {
             option.grid = {};
         }
     });
-});

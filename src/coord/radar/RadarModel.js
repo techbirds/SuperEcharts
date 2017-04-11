@@ -1,10 +1,10 @@
-define(function (require) {
+
 
 
     var axisDefault = require('../axisDefault');
     var valueAxisDefault = axisDefault.valueAxis;
     var Model = require('../../model/Model');
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
 
     var axisModelCommonMixin = require('../axisModelCommonMixin');
 
@@ -131,5 +131,4 @@ define(function (require) {
         }
     });
 
-    return RadarModel;
-});
+    module.exports = RadarModel;

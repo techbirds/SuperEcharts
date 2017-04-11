@@ -1,8 +1,8 @@
-define(function (require) {
+
 
     var ComponentView = require('../../view/Component');
 
-    return ComponentView.extend({
+    module.exports = ComponentView.extend({
 
         type: 'dataZoom',
 
@@ -95,4 +95,3 @@ define(function (require) {
 
     });
 
-});

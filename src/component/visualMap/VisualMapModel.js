@@ -1,11 +1,11 @@
 /**
  * @file Controller visual map model
  */
-define(function(require) {
+
 
     var echarts = require('../../echarts');
-    var zrUtil = require('zrender/core/util');
-    var env = require('zrender/core/env');
+    var zrUtil = require('zrender/lib/core/util');
+    var env = require('zrender/lib/core/env');
     var visualDefault = require('../../visual/visualDefault');
     var VisualMapping = require('../../visual/VisualMapping');
     var visualSolution = require('../../visual/visualSolution');
@@ -517,6 +517,5 @@ define(function(require) {
 
     });
 
-    return VisualMapModel;
+    module.exports = VisualMapModel;
 
-});

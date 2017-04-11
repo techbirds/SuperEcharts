@@ -1,7 +1,7 @@
-define(function (require) {
+
 
     var axisDefault = require('./axisDefault');
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
     var ComponentModel = require('../model/Component');
     var layout = require('../util/layout');
 
@@ -15,7 +15,7 @@ define(function (require) {
      * @param {Function} axisTypeDefaulter
      * @param {Object} [extraDefaultOption]
      */
-    return function (axisName, BaseAxisModelClass, axisTypeDefaulter, extraDefaultOption) {
+    module.exports = function (axisName, BaseAxisModelClass, axisTypeDefaulter, extraDefaultOption) {
 
         zrUtil.each(AXIS_TYPES, function (axisType) {
 
@@ -55,4 +55,3 @@ define(function (require) {
             zrUtil.curry(axisTypeDefaulter, axisName)
         );
     };
-});

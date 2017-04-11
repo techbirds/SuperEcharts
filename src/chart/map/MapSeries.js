@@ -1,8 +1,8 @@
-define(function (require) {
+
 
     var List = require('../../data/List');
     var SeriesModel = require('../../model/Series');
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
     var completeDimensions = require('../../data/helper/completeDimensions');
 
     var formatUtil = require('../../util/format');
@@ -217,5 +217,4 @@ define(function (require) {
 
     zrUtil.mixin(MapSeries, dataSelectableMixin);
 
-    return MapSeries;
-});
+    module.exports = MapSeries;

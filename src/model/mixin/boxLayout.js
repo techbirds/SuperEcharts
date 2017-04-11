@@ -1,6 +1,6 @@
-define(function (require) {
 
-    return {
+
+    module.exports = {
         getBoxLayoutParams: function () {
             return {
                 left: this.get('left'),
@@ -12,4 +12,3 @@ define(function (require) {
             };
         }
     };
-});

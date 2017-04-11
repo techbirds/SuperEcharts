@@ -1,4 +1,4 @@
-define(function (require) {
+
 
     var roamHelper = {};
 
@@ -56,5 +56,4 @@ define(function (require) {
         };
     };
 
-    return roamHelper;
-});
+    module.exports = roamHelper;

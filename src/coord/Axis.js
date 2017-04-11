@@ -1,8 +1,8 @@
-define(function (require) {
+
 
     var numberUtil = require('../util/number');
     var linearMap = numberUtil.linearMap;
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
 
     function fixExtentWithBands(extent, nTick) {
         var size = extent[1] - extent[0];
@@ -216,5 +216,4 @@ define(function (require) {
         }
     };
 
-    return Axis;
-});
+    module.exports = Axis;

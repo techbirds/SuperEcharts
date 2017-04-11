@@ -2,10 +2,10 @@
  * @module echarts/component/toolbox/feature/DataView
  */
 
-define(function (require) {
 
-    var zrUtil = require('zrender/core/util');
-    var eventTool = require('zrender/core/event');
+
+    var zrUtil = require('zrender/lib/core/util');
+    var eventTool = require('zrender/lib/core/event');
 
 
     var BLOCK_SPLITER = new Array(60).join('-');
@@ -474,5 +474,4 @@ define(function (require) {
         }, payload.newOption));
     });
 
-    return DataView;
-});
+    module.exports = DataView;

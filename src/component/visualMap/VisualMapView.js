@@ -1,13 +1,13 @@
-define(function (require) {
 
-    var zrUtil = require('zrender/core/util');
+
+    var zrUtil = require('zrender/lib/core/util');
     var graphic = require('../../util/graphic');
     var formatUtil = require('../../util/format');
     var layout = require('../../util/layout');
     var echarts = require('../../echarts');
     var VisualMapping = require('../../visual/VisualMapping');
 
-    return echarts.extendComponentView({
+    module.exports = echarts.extendComponentView({
 
         type: 'visualMap',
 
@@ -152,4 +152,3 @@ define(function (require) {
 
     });
 
-});

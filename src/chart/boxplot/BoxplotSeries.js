@@ -1,8 +1,7 @@
-define(function(require) {
+'use strict';
 
-    'use strict';
 
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
     var SeriesModel = require('../../model/Series');
     var whiskerBoxCommon = require('../helper/whiskerBoxCommon');
 
@@ -67,6 +66,5 @@ define(function(require) {
 
     zrUtil.mixin(BoxplotSeries, whiskerBoxCommon.seriesModelMixin, true);
 
-    return BoxplotSeries;
+    module.exports = BoxplotSeries;
 
-});

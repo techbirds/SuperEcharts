@@ -1,7 +1,7 @@
 /**
  * DataZoom component entry
  */
-define(function (require) {
+
 
     require('./dataZoom/typeDefaulter');
 
@@ -17,4 +17,3 @@ define(function (require) {
     require('./dataZoom/dataZoomProcessor');
     require('./dataZoom/dataZoomAction');
 
-});

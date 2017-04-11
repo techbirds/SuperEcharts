@@ -1,8 +1,8 @@
 // Poly path support NaN point
-define(function (require) {
 
-    var Path = require('zrender/graphic/Path');
-    var vec2 = require('zrender/core/vector');
+
+    var Path = require('zrender/lib/graphic/Path');
+    var vec2 = require('zrender/lib/core/vector');
 
     var vec2Min = vec2.min;
     var vec2Max = vec2.max;
@@ -130,7 +130,7 @@ define(function (require) {
         };
     }
 
-    return {
+    module.exports = {
 
         Polyline: Path.extend({
 
@@ -247,4 +247,3 @@ define(function (require) {
             }
         })
     };
-});

@@ -1,5 +1,5 @@
-define(function () {
-    return function (seriesType, ecModel) {
+
+    module.exports = function (seriesType, ecModel) {
         var legendModels = ecModel.findComponents({
             mainType: 'legend'
         });
@@ -20,4 +20,3 @@ define(function () {
             }, this);
         }, this);
     };
-});

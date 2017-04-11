@@ -1,4 +1,4 @@
-define(function (require) {
+
 
     require('./toolbox/ToolboxModel');
     require('./toolbox/ToolboxView');
@@ -8,4 +8,3 @@ define(function (require) {
     require('./toolbox/feature/DataView');
     require('./toolbox/feature/DataZoom');
     require('./toolbox/feature/Restore');
-});

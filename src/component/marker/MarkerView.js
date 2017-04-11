@@ -1,6 +1,6 @@
-define(function (require) {
 
-    return require('../../echarts').extendComponentView({
+
+    module.exports = require('../../echarts').extendComponentView({
 
         type: 'marker',
 
@@ -36,4 +36,3 @@ define(function (require) {
 
         renderSeries: function () {}
     });
-});

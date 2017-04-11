@@ -1,6 +1,6 @@
-define(function (require) {
 
-    var zrUtil = require('zrender/core/util');
+
+    var zrUtil = require('zrender/lib/core/util');
     var Axis = require('../Axis');
 
     function IndicatorAxis(dim, scale, radiusExtent) {
@@ -31,5 +31,4 @@ define(function (require) {
 
     zrUtil.inherits(IndicatorAxis, Axis);
 
-    return IndicatorAxis;
-});
+    module.exports = IndicatorAxis;

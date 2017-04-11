@@ -1,4 +1,4 @@
-define(function (require) {
+
 
     var ATTR = '\0_ec_interaction_mutex';
 
@@ -39,5 +39,4 @@ define(function (require) {
         function () {}
     );
 
-    return interactionMutex;
-});
+    module.exports = interactionMutex;

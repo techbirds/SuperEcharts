@@ -1,17 +1,17 @@
 /**
  * @file Silder timeline view
  */
-define(function (require) {
 
-    var zrUtil = require('zrender/core/util');
+
+    var zrUtil = require('zrender/lib/core/util');
     var graphic = require('../../util/graphic');
     var layout = require('../../util/layout');
     var TimelineView = require('./TimelineView');
     var TimelineAxis = require('./TimelineAxis');
     var symbolUtil = require('../../util/symbol');
     var axisHelper = require('../../coord/axisHelper');
-    var BoundingRect = require('zrender/core/BoundingRect');
-    var matrix = require('zrender/core/matrix');
+    var BoundingRect = require('zrender/lib/core/BoundingRect');
+    var matrix = require('zrender/lib/core/matrix');
     var numberUtil = require('../../util/number');
     var formatUtil = require('../../util/format');
     var encodeHTML = formatUtil.encodeHTML;
@@ -21,7 +21,7 @@ define(function (require) {
 
     var PI = Math.PI;
 
-    return TimelineView.extend({
+    module.exports = TimelineView.extend({
 
         type: 'timeline.slider',
 
@@ -710,4 +710,3 @@ define(function (require) {
         }
     }
 
-});

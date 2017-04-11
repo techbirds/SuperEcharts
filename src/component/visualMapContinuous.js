@@ -1,7 +1,7 @@
 /**
  * DataZoom component entry
  */
-define(function (require) {
+
 
     require('../echarts').registerPreprocessor(
         require('./visualMap/preprocessor')
@@ -13,4 +13,3 @@ define(function (require) {
     require('./visualMap/ContinuousView');
     require('./visualMap/visualMapAction');
 
-});

@@ -1,6 +1,6 @@
-define(function (require) {
 
-    var zrUtil = require('zrender/core/util');
+
+    var zrUtil = require('zrender/lib/core/util');
     var echarts = require('../echarts');
 
     require('./pie/PieSeries');
@@ -27,4 +27,3 @@ define(function (require) {
     ));
 
     echarts.registerProcessor(zrUtil.curry(require('../processor/dataFilter'), 'pie'));
-});

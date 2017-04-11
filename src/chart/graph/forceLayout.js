@@ -1,13 +1,13 @@
-define(function (require) {
+
 
     var forceHelper = require('./forceHelper');
     var numberUtil = require('../../util/number');
     var simpleLayoutHelper = require('./simpleLayoutHelper');
     var circularLayoutHelper = require('./circularLayoutHelper');
-    var vec2 = require('zrender/core/vector');
-    var zrUtil = require('zrender/core/util');
+    var vec2 = require('zrender/lib/core/vector');
+    var zrUtil = require('zrender/lib/core/util');
 
-    return function (ecModel) {
+    module.exports = function (ecModel) {
         ecModel.eachSeriesByType('graph', function (graphSeries) {
             var coordSys = graphSeries.coordinateSystem;
             if (coordSys && coordSys.type !== 'view') {
@@ -131,4 +131,3 @@ define(function (require) {
             }
         });
     };
-});

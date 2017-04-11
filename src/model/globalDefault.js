@@ -1,10 +1,10 @@
-define(function () {
+
     var platform = '';
     // Navigator not exists in node
     if (typeof navigator !== 'undefined') {
         platform = navigator.platform || '';
     }
-    return {
+    module.exports = {
         // 全图默认背景
         // backgroundColor: 'rgba(0,0,0,0)',
 
@@ -53,4 +53,3 @@ define(function () {
         // see example <echarts/test/heatmap-large.html>.
         hoverLayerThreshold: 3000
     };
-});

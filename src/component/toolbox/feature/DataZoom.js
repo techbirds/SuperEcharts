@@ -1,7 +1,7 @@
-define(function(require) {
-    'use strict';
+'use strict';
 
-    var zrUtil = require('zrender/core/util');
+
+    var zrUtil = require('zrender/lib/core/util');
     var BrushController = require('../../helper/BrushController');
     var brushHelper = require('../../helper/brushHelper');
     var history = require('../../dataZoom/history');
@@ -299,5 +299,4 @@ define(function(require) {
         }
     });
 
-    return DataZoom;
-});
+    module.exports = DataZoom;

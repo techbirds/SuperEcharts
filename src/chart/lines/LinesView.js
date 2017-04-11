@@ -1,4 +1,4 @@
-define(function (require) {
+
 
     var LineDraw = require('../helper/LineDraw');
     var EffectLine = require('../helper/EffectLine');
@@ -92,4 +92,3 @@ define(function (require) {
 
         dispose: function () {}
     });
-});

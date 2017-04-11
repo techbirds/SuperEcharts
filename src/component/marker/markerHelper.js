@@ -1,6 +1,6 @@
-define(function (require) {
 
-    var zrUtil = require('zrender/core/util');
+
+    var zrUtil = require('zrender/lib/core/util');
     var numberUtil = require('../../util/number');
     var indexOf = zrUtil.indexOf;
 
@@ -189,11 +189,10 @@ define(function (require) {
         }
     };
 
-    return {
+    module.exports = {
         dataTransform: dataTransform,
         dataFilter: dataFilter,
         dimValueGetter: dimValueGetter,
         getAxisInfo: getAxisInfo,
         numCalculate: numCalculate
     };
-});

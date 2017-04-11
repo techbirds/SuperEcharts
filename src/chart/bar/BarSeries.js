@@ -1,11 +1,10 @@
-define(function(require) {
+'use strict';
 
-    'use strict';
 
     var SeriesModel = require('../../model/Series');
     var createListFromArray = require('../helper/createListFromArray');
 
-    return SeriesModel.extend({
+    module.exports = SeriesModel.extend({
 
         type: 'series.bar',
 
@@ -72,4 +71,3 @@ define(function(require) {
             }
         }
     });
-});

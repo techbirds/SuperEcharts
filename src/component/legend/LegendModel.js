@@ -1,8 +1,7 @@
-define(function(require) {
+'use strict';
 
-    'use strict';
 
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
     var Model = require('../../model/Model');
 
     var LegendModel = require('../../echarts').extendComponentModel({
@@ -189,5 +188,4 @@ define(function(require) {
         }
     });
 
-    return LegendModel;
-});
+    module.exports = LegendModel;

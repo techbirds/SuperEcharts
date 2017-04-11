@@ -1,13 +1,13 @@
-define(function (require) {
 
-    var zrUtil = require('zrender/core/util');
+
+    var zrUtil = require('zrender/lib/core/util');
 
     var geoCoordMap = {
         'Russia': [100, 60],
         'United States of America': [-99, 38]
     };
 
-    return function (geo) {
+    module.exports = function (geo) {
         zrUtil.each(geo.regions, function (region) {
             var geoCoord = geoCoordMap[region.name];
             if (geoCoord) {
@@ -17,4 +17,3 @@ define(function (require) {
             }
         });
     };
-});

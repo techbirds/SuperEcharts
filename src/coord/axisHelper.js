@@ -1,4 +1,4 @@
-define(function (require) {
+
 
     var OrdinalScale = require('../scale/Ordinal');
     var IntervalScale = require('../scale/Interval');
@@ -7,8 +7,8 @@ define(function (require) {
     var Scale = require('../scale/Scale');
 
     var numberUtil = require('../util/number');
-    var zrUtil = require('zrender/core/util');
-    var textContain = require('zrender/contain/text');
+    var zrUtil = require('zrender/lib/core/util');
+    var textContain = require('zrender/lib/contain/text');
     var axisHelper = {};
 
     /**
@@ -230,5 +230,4 @@ define(function (require) {
         }
     };
 
-    return axisHelper;
-});
+    module.exports = axisHelper;

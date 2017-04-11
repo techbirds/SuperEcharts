@@ -1,4 +1,4 @@
-define(function () {
+
 
     var lib = {};
 
@@ -138,5 +138,5 @@ define(function () {
         }
     };
 
-    return lib;
-});
+    module.exports = lib;
+

@@ -1,7 +1,7 @@
 // Compatitable with 2.0
-define(function (require) {
 
-    var zrUtil = require('zrender/core/util');
+
+    var zrUtil = require('zrender/lib/core/util');
     var compatStyle = require('./helper/compatStyle');
 
     function get(opt, path) {
@@ -56,7 +56,7 @@ define(function (require) {
 
     var each = zrUtil.each;
 
-    return function (option) {
+    module.exports = function (option) {
         each(option.series, function (seriesOpt) {
             if (!zrUtil.isObject(seriesOpt)) {
                 return;
@@ -102,4 +102,3 @@ define(function (require) {
             }
         });
     };
-});

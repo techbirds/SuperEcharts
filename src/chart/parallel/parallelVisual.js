@@ -1,6 +1,6 @@
-define(function (require) {
 
-    return function (ecModel) {
+
+    module.exports = function (ecModel) {
 
         ecModel.eachSeriesByType('parallel', function (seriesModel) {
 
@@ -31,4 +31,3 @@ define(function (require) {
             data.setVisual('color', color);
         });
     };
-});

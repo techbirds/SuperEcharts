@@ -1,6 +1,6 @@
-define(function (require) {
 
-    var zrUtil = require('zrender/core/util');
+
+    var zrUtil = require('zrender/lib/core/util');
     var List = require('../../data/List');
     var numberUtil = require('../../util/number');
 
@@ -352,4 +352,3 @@ define(function (require) {
             line: lineData
         };
     }
-});

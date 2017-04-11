@@ -1,9 +1,9 @@
-define(function (require) {
+
 
     var sin = Math.sin;
     var cos = Math.cos;
 
-    return require('../../util/graphic').extendShape({
+    module.exports = require('../../util/graphic').extendShape({
 
         type: 'ec-ribbon',
 
@@ -64,4 +64,3 @@ define(function (require) {
             );
         }
     });
-});

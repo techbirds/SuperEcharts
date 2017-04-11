@@ -1,9 +1,9 @@
 /**
  * Line path for bezier and straight line draw
  */
-define(function (require) {
+
     var graphic = require('../../util/graphic');
-    var vec2 = require('zrender/core/vector');
+    var vec2 = require('zrender/lib/core/vector');
 
     var straightLineProto = graphic.Line.prototype;
     var bezierCurveProto = graphic.BezierCurve.prototype;
@@ -12,7 +12,7 @@ define(function (require) {
         return isNaN(+shape.cpx1) || isNaN(+shape.cpy1);
     }
 
-    return graphic.extendShape({
+    module.exports = graphic.extendShape({
 
         type: 'ec-line',
 
@@ -49,4 +49,3 @@ define(function (require) {
             return vec2.normalize(p, p);
         }
     });
-});

@@ -1,7 +1,7 @@
-define(function (require) {
 
-    var curveTool = require('zrender/core/curve');
-    var vec2 = require('zrender/core/vector');
+
+    var curveTool = require('zrender/lib/core/curve');
+    var vec2 = require('zrender/lib/core/vector');
 
     var v1 = [];
     var v2 = [];
@@ -71,7 +71,7 @@ define(function (require) {
         return t;
     }
     // Adjust edge to avoid
-    return function (graph, scale) {
+    module.exports = function (graph, scale) {
         var tmp0 = [];
         var quadraticSubdivide = curveTool.quadraticSubdivide;
         var pts = [[], [], []];
@@ -158,4 +158,3 @@ define(function (require) {
             }
         });
     };
-});

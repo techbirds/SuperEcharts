@@ -1,7 +1,7 @@
-define(function (require) {
+
 
     var graphic = require('../../util/graphic');
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
 
     /**
      * @param {module:echarts/model/Series} seriesModel
@@ -376,5 +376,4 @@ define(function (require) {
 
     });
 
-    return Pie;
-});
+    module.exports = Pie;

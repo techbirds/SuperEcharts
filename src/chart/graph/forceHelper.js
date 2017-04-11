@@ -1,13 +1,13 @@
-define(function (require) {
 
-    var vec2 = require('zrender/core/vector');
+
+    var vec2 = require('zrender/lib/core/vector');
     var scaleAndAdd = vec2.scaleAndAdd;
 
     // function adjacentNode(n, e) {
     //     return e.n1 === n ? e.n2 : e.n1;
     // }
 
-    return function (nodes, edges, opts) {
+    module.exports = function (nodes, edges, opts) {
         var rect = opts.rect;
         var width = rect.width;
         var height = rect.height;
@@ -134,4 +134,3 @@ define(function (require) {
             }
         };
     };
-});

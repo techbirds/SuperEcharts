@@ -2,13 +2,13 @@
  * @file The layout algorithm of sankey view
  * @author  Deqing Li(annong035@gmail.com)
  */
-define(function (require) {
+
 
     var layout = require('../../util/layout');
     var nest = require('../../util/array/nest');
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
 
-    return function (ecModel, api, payload) {
+    module.exports = function (ecModel, api, payload) {
 
         ecModel.eachSeriesByType('sankey', function (seriesModel) {
 
@@ -367,4 +367,4 @@ define(function (require) {
     function getEdgeValue(edge) {
         return edge.getValue();
     }
-});
+

@@ -1,6 +1,6 @@
-define(function (require) {
 
-    var zrUtil = require('zrender/core/util');
+
+    var zrUtil = require('zrender/lib/core/util');
 
     var POSSIBLE_STYLES = [
         'areaStyle', 'lineStyle', 'nodeStyle', 'linkStyle',
@@ -37,7 +37,7 @@ define(function (require) {
         }
     }
 
-    return function (seriesOpt) {
+    module.exports = function (seriesOpt) {
         if (!seriesOpt) {
             return;
         }
@@ -73,4 +73,3 @@ define(function (require) {
             }
         }
     };
-});

@@ -1,6 +1,6 @@
 // TODO Batch by color
 
-define(function (require) {
+
 
     var graphic = require('../../util/graphic');
     var symbolUtil = require('../../util/symbol');
@@ -142,5 +142,4 @@ define(function (require) {
         this.group.removeAll();
     };
 
-    return LargeSymbolDraw;
-});
+    module.exports = LargeSymbolDraw;

@@ -1,4 +1,4 @@
-define(function (require) {
+
 
     require('../../echarts').extendComponentModel({
 
@@ -104,4 +104,3 @@ define(function (require) {
             }
         }
     });
-});

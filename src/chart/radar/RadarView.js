@@ -1,7 +1,7 @@
-define(function (require) {
+
 
     var graphic = require('../../util/graphic');
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
     var symbolUtil = require('../../util/symbol');
 
     function normalizeSymbolSize(symbolSize) {
@@ -10,7 +10,7 @@ define(function (require) {
         }
         return symbolSize;
     }
-    return require('../../echarts').extendChartView({
+    module.exports = require('../../echarts').extendChartView({
         type: 'radar',
 
         render: function (seriesModel, ecModel, api) {
@@ -218,4 +218,3 @@ define(function (require) {
 
         dispose: function () {}
     });
-});

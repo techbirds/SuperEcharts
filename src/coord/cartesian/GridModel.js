@@ -1,13 +1,12 @@
+'use strict';
 // Grid 是在有直角坐标系的时候必须要存在的
 // 所以这里也要被 Cartesian2D 依赖
-define(function(require) {
 
-    'use strict';
 
     require('./AxisModel');
     var ComponentModel = require('../../model/Component');
 
-    return ComponentModel.extend({
+    module.exports = ComponentModel.extend({
 
         type: 'grid',
 
@@ -37,4 +36,3 @@ define(function(require) {
             borderColor: '#ccc'
         }
     });
-});

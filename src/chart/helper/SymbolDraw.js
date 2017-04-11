@@ -1,7 +1,7 @@
 /**
  * @module echarts/chart/helper/SymbolDraw
  */
-define(function (require) {
+
 
     var graphic = require('../../util/graphic');
     var Symbol = require('./Symbol');
@@ -123,5 +123,4 @@ define(function (require) {
         }
     };
 
-    return SymbolDraw;
-});
+    module.exports = SymbolDraw;

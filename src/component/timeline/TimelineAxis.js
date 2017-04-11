@@ -1,6 +1,6 @@
-define(function (require) {
 
-    var zrUtil = require('zrender/core/util');
+
+    var zrUtil = require('zrender/lib/core/util');
     var Axis = require('../../coord/Axis');
     var axisHelper = require('../../coord/axisHelper');
 
@@ -92,5 +92,4 @@ define(function (require) {
 
     zrUtil.inherits(TimelineAxis, Axis);
 
-    return TimelineAxis;
-});
+    module.exports = TimelineAxis;

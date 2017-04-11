@@ -1,7 +1,7 @@
-define(function (require) {
+
 
     var graphic = require('../util/graphic');
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
     var PI = Math.PI;
     /**
      * @param {module:echarts/ExtensionAPI} api
@@ -11,7 +11,7 @@ define(function (require) {
      * @param {string} [opts.textColor]
      * @return {module:zrender/Element}
      */
-    return function (api, opts) {
+    module.exports = function (api, opts) {
         opts = opts || {};
         zrUtil.defaults(opts, {
             text: 'loading',
@@ -95,4 +95,3 @@ define(function (require) {
         group.resize();
         return group;
     };
-});

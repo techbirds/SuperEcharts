@@ -1,7 +1,7 @@
-define(function(require) {
+
 
     var VisualMapModel = require('./VisualMapModel');
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
     var VisualMapping = require('../../visual/VisualMapping');
     var visualDefault = require('../../visual/visualDefault');
     var reformIntervals = require('../../util/number').reformIntervals;
@@ -519,5 +519,4 @@ define(function(require) {
         }
     }
 
-    return PiecewiseModel;
-});
+    module.exports = PiecewiseModel;

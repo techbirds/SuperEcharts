@@ -1,15 +1,14 @@
+'use strict';
 /**
  * @file  Define the themeRiver view's series model
  * @author Deqing Li(annong035@gmail.com)
  */
-define(function (require) {
 
-    'use strict';
 
     var completeDimensions = require('../../data/helper/completeDimensions');
     var SeriesModel = require('../../model/Series');
     var List = require('../../data/List');
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
     var formatUtil = require('../../util/format');
     var encodeHTML = formatUtil.encodeHTML;
     var nest = require('../../util/array/nest');
@@ -314,5 +313,5 @@ define(function (require) {
         }
     });
 
-    return ThemeRiverSeries;
-});
+    module.exports = ThemeRiverSeries;
+

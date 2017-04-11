@@ -1,6 +1,6 @@
-define(function (require) {
 
-    return function (ecModel) {
+
+    module.exports = function (ecModel) {
         var legendModels = ecModel.findComponents({
             mainType: 'legend'
         });
@@ -32,4 +32,3 @@ define(function (require) {
             });
         }, this);
     };
-});

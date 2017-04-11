@@ -1,7 +1,7 @@
-define(function (require) {
+
     var echarts = require('../echarts');
-    var zrUtil = require('zrender/core/util');
-    return function (seriesType, actionInfos) {
+    var zrUtil = require('zrender/lib/core/util');
+    module.exports = function (seriesType, actionInfos) {
         zrUtil.each(actionInfos, function (actionInfo) {
             actionInfo.update = 'updateView';
             /**
@@ -32,4 +32,3 @@ define(function (require) {
             });
         });
     };
-});

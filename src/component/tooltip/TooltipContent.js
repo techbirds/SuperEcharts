@@ -1,15 +1,15 @@
 /**
  * @module echarts/component/tooltip/TooltipContent
  */
-define(function (require) {
 
-    var zrUtil = require('zrender/core/util');
-    var zrColor = require('zrender/tool/color');
-    var eventUtil = require('zrender/core/event');
+
+    var zrUtil = require('zrender/lib/core/util');
+    var zrColor = require('zrender/lib/tool/color');
+    var eventUtil = require('zrender/lib/core/event');
     var formatUtil = require('../../util/format');
     var each = zrUtil.each;
     var toCamelCase = formatUtil.toCamelCase;
-    var env = require('zrender/core/env');
+    var env = require('zrender/lib/core/env');
 
     var vendors = ['', '-webkit-', '-moz-', '-o-'];
 
@@ -238,5 +238,4 @@ define(function (require) {
         }
     };
 
-    return TooltipContent;
-});
+    module.exports = TooltipContent;

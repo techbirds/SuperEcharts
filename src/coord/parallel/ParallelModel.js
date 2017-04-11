@@ -1,6 +1,6 @@
-define(function(require) {
 
-    var zrUtil = require('zrender/core/util');
+
+    var zrUtil = require('zrender/lib/core/util');
     var Component = require('../../model/Component');
 
     require('./AxisModel');
@@ -118,4 +118,3 @@ define(function(require) {
 
     });
 
-});

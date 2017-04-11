@@ -1,6 +1,6 @@
-define(function (require) {
 
-    var zrUtil = require('zrender/core/util');
+
+    var zrUtil = require('zrender/lib/core/util');
     var Axis = require('../Axis');
     var axisLabelInterval = require('./axisLabelInterval');
 
@@ -113,5 +113,4 @@ define(function (require) {
     };
     zrUtil.inherits(Axis2D, Axis);
 
-    return Axis2D;
-});
+    module.exports = Axis2D;

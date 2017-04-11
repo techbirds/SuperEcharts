@@ -1,7 +1,7 @@
-define(function (require) {
-    'use strict';
+'use strict';
 
-    var zrUtil = require('zrender/core/util');
+
+    var zrUtil = require('zrender/lib/core/util');
     var Axis = require('../Axis');
 
     function RadiusAxis(scale, radiusExtent) {
@@ -30,5 +30,4 @@ define(function (require) {
 
     zrUtil.inherits(RadiusAxis, Axis);
 
-    return RadiusAxis;
-});
+    module.exports = RadiusAxis;

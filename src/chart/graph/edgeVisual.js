@@ -1,4 +1,4 @@
-define(function (require) {
+
 
     function normalize(a) {
         if (!(a instanceof Array)) {
@@ -6,7 +6,7 @@ define(function (require) {
         }
         return a;
     }
-    return function (ecModel) {
+    module.exports = function (ecModel) {
         ecModel.eachSeriesByType('graph', function (seriesModel) {
             var graph = seriesModel.getGraph();
             var edgeData = seriesModel.getEdgeData();
@@ -50,4 +50,3 @@ define(function (require) {
             });
         });
     };
-});

@@ -1,9 +1,9 @@
 /**
  * Link lists and struct (graph or tree)
  */
-define(function (require) {
 
-    var zrUtil = require('zrender/core/util');
+
+    var zrUtil = require('zrender/lib/core/util');
     var each = zrUtil.each;
 
     var DATAS = '\0__link_datas';
@@ -129,5 +129,4 @@ define(function (require) {
         data.getLinkedData = getLinkedData;
     }
 
-    return linkList;
-});
+    module.exports = linkList;

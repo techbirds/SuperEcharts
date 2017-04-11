@@ -1,9 +1,9 @@
+'use strict';
 // Layout helpers for each component positioning
-define(function(require) {
-    'use strict';
 
-    var zrUtil = require('zrender/core/util');
-    var BoundingRect = require('zrender/core/BoundingRect');
+
+    var zrUtil = require('zrender/lib/core/util');
+    var BoundingRect = require('zrender/lib/core/BoundingRect');
     var numberUtil = require('./number');
     var formatUtil = require('./format');
     var parsePercent = numberUtil.parsePercent;
@@ -445,5 +445,4 @@ define(function(require) {
         return target;
     };
 
-    return layout;
-});
+    module.exports = layout;

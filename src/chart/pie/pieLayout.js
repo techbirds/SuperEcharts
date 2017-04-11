@@ -1,16 +1,16 @@
 // TODO minAngle
 
-define(function (require) {
+
 
     var numberUtil = require('../../util/number');
     var parsePercent = numberUtil.parsePercent;
     var labelLayout = require('./labelLayout');
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
 
     var PI2 = Math.PI * 2;
     var RADIAN = Math.PI / 180;
 
-    return function (seriesType, ecModel, api, payload) {
+    module.exports = function (seriesType, ecModel, api, payload) {
         ecModel.eachSeriesByType(seriesType, function (seriesModel) {
             var center = seriesModel.get('center');
             var radius = seriesModel.get('radius');
@@ -120,4 +120,3 @@ define(function (require) {
             labelLayout(seriesModel, r, width, height);
         });
     };
-});

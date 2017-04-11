@@ -1,4 +1,4 @@
-define(function (require) {
+
 
     var echarts = require('../echarts');
 
@@ -9,4 +9,3 @@ define(function (require) {
     echarts.registerVisual(require('./treemap/treemapVisual'));
 
     echarts.registerLayout(require('./treemap/treemapLayout'));
-});

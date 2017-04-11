@@ -1,6 +1,5 @@
-define(function (require) {
+'use strict';
 
-    'use strict';
 
     require('./AxisModel');
 
@@ -48,4 +47,3 @@ define(function (require) {
             radius: '80%'
         }
     });
-});

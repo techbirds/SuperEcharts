@@ -3,10 +3,10 @@
  *
  * @module echarts/model/Component
  */
-define(function(require) {
+
 
     var Model = require('./Model');
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
     var arrayPush = Array.prototype.push;
     var componentUtil = require('../util/component');
     var clazzUtil = require('../util/clazz');
@@ -190,5 +190,4 @@ define(function(require) {
 
     zrUtil.mixin(ComponentModel, require('./mixin/boxLayout'));
 
-    return ComponentModel;
-});
+    module.exports = ComponentModel;

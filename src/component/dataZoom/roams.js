@@ -1,7 +1,7 @@
 /**
  * @file Roam controller manager.
  */
-define(function(require) {
+
 
     // Only create one roam controller for each coordinate system.
     // one roam controller might be refered by two inside data zoom
@@ -9,7 +9,7 @@ define(function(require) {
     // pan or zoom, only dispatch one action for those data zoom
     // components.
 
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
     var RoamController = require('../../component/helper/RoamController');
     var throttle = require('../../util/throttle');
     var curry = zrUtil.curry;
@@ -185,6 +185,5 @@ define(function(require) {
         });
     }
 
-    return roams;
+    module.exports = roams;
 
-});

@@ -1,6 +1,6 @@
-define(function(require) {
 
-    var zrUtil = require('zrender/core/util');
+
+    var zrUtil = require('zrender/lib/core/util');
     var clazz = require('./clazz');
 
     var parseClassType = clazz.parseClassType;
@@ -172,5 +172,4 @@ define(function(require) {
         }
     };
 
-    return componentUtil;
-});
+    module.exports = componentUtil;

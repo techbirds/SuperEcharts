@@ -1,6 +1,6 @@
-define(function (require) {
 
-    // var arrayDiff = require('zrender/core/arrayDiff');
+
+    // var arrayDiff = require('zrender/lib/core/arrayDiff');
     // 'zrender/core/arrayDiff' has been used before, but it did
     // not do well in performance when roam with fixed dataZoom window.
 
@@ -76,7 +76,7 @@ define(function (require) {
         return diffResult;
     }
 
-    return function (
+    module.exports = function (
         oldData, newData,
         oldStackedOnPoints, newStackedOnPoints,
         oldCoordSys, newCoordSys
@@ -206,4 +206,3 @@ define(function (require) {
             status: sortedStatus
         };
     };
-});

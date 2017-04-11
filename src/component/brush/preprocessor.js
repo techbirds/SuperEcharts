@@ -1,13 +1,13 @@
 /**
  * @file brush preprocessor
  */
-define(function(require) {
 
-    var zrUtil = require('zrender/core/util');
+
+    var zrUtil = require('zrender/lib/core/util');
 
     var DEFAULT_TOOLBOX_BTNS = ['rect', 'polygon', 'keep', 'clear'];
 
-    return function (option, isNew) {
+    module.exports = function (option, isNew) {
         var brushComponents = option && option.brush;
         if (!zrUtil.isArray(brushComponents)) {
             brushComponents = brushComponents ? [brushComponents] : [];
@@ -62,4 +62,3 @@ define(function(require) {
         });
     }
 
-});

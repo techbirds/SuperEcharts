@@ -1,7 +1,7 @@
-define(function(require) {
+
 
     var ComponentModel = require('../../model/Component');
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
     var makeStyleMapper = require('../../model/mixin/makeStyleMapper');
     var axisModelCreator = require('../axisModelCreator');
     var numberUtil = require('../../util/number');
@@ -118,5 +118,4 @@ define(function(require) {
 
     axisModelCreator('parallel', AxisModel, getAxisType, defaultOption);
 
-    return AxisModel;
-});
+    module.exports = AxisModel;

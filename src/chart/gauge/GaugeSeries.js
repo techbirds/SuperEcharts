@@ -1,8 +1,8 @@
-define(function (require) {
+
 
     var List = require('../../data/List');
     var SeriesModel = require('../../model/Series');
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
 
     var GaugeSeries = SeriesModel.extend({
 
@@ -119,5 +119,4 @@ define(function (require) {
         }
     });
 
-    return GaugeSeries;
-});
+    module.exports = GaugeSeries;

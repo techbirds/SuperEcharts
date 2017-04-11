@@ -1,11 +1,11 @@
 /**
  * @module echarts/component/helper/MapDraw
  */
-define(function (require) {
+
 
     var RoamController = require('./RoamController');
     var graphic = require('../../util/graphic');
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
 
     function getFixedItemStyle(model, scale) {
         var itemStyle = model.getItemStyle();
@@ -320,5 +320,4 @@ define(function (require) {
         }
     };
 
-    return MapDraw;
-});
+    module.exports = MapDraw;

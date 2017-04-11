@@ -2,12 +2,12 @@
  * Provide effect for line
  * @module echarts/chart/helper/EffectLine
  */
-define(function (require) {
+
 
     var Polyline = require('./Polyline');
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
     var EffectLine = require('./EffectLine');
-    var vec2 = require('zrender/core/vector');
+    var vec2 = require('zrender/lib/core/vector');
 
     /**
      * @constructor
@@ -107,5 +107,4 @@ define(function (require) {
 
     zrUtil.inherits(EffectPolyline, EffectLine);
 
-    return EffectPolyline;
-});
+    module.exports = EffectPolyline;

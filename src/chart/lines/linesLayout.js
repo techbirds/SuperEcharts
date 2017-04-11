@@ -1,6 +1,6 @@
-define(function (require) {
 
-    return function (ecModel) {
+
+    module.exports = function (ecModel) {
         ecModel.eachSeriesByType('lines', function (seriesModel) {
             var coordSys = seriesModel.coordinateSystem;
             var lineData = seriesModel.getData();
@@ -40,4 +40,3 @@ define(function (require) {
             });
         });
     };
-});

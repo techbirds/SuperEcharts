@@ -1,11 +1,11 @@
 /**
  * @file Timeline model
  */
-define(function(require) {
+
 
     var ComponentModel = require('../../model/Component');
     var List = require('../../data/List');
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
     var modelUtil = require('../../util/model');
 
     var TimelineModel = ComponentModel.extend({
@@ -193,5 +193,4 @@ define(function(require) {
 
     });
 
-    return TimelineModel;
-});
+    module.exports = TimelineModel;

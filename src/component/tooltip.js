@@ -1,5 +1,5 @@
 // FIXME Better way to pack data in graphic element
-define(function (require) {
+
 
     require('./tooltip/TooltipModel');
 
@@ -33,4 +33,3 @@ define(function (require) {
         // noop
         function () {}
     );
-});

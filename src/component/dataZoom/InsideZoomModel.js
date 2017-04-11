@@ -1,9 +1,9 @@
 /**
  * @file Data zoom model
  */
-define(function(require) {
 
-    return require('./DataZoomModel').extend({
+
+    module.exports = require('./DataZoomModel').extend({
 
         type: 'dataZoom.inside',
 
@@ -15,4 +15,3 @@ define(function(require) {
             zoomLock: false  // Whether disable zoom but only pan.
         }
     });
-});

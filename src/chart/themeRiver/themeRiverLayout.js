@@ -2,13 +2,13 @@
  * @file  Using layout algorithm transform the raw data to layout information.
  * @author Deqing Li(annong035@gmail.com)
  */
-define(function (require) {
 
-    var zrUtil = require('zrender/core/util');
+
+    var zrUtil = require('zrender/lib/core/util');
     var numberUtil =  require('../../util/number');
 
 
-    return function (ecModel, api) {
+    module.exports = function (ecModel, api) {
 
         ecModel.eachSeriesByType('themeRiver', function (seriesModel) {
 
@@ -140,4 +140,4 @@ define(function (require) {
 
         return base;
     }
-});
+

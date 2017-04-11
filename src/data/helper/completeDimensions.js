@@ -1,9 +1,9 @@
 /**
  * Complete dimensions by data (guess dimension).
  */
-define(function (require) {
 
-    var zrUtil = require('zrender/core/util');
+
+    var zrUtil = require('zrender/lib/core/util');
 
     /**
      * Complete the dimensions array guessed from the data structure.
@@ -60,6 +60,5 @@ define(function (require) {
         return zrUtil.isArray(o) ? o : zrUtil.isObject(o) ? o.value: o;
     }
 
-    return completeDimensions;
+    module.exports = completeDimensions;
 
-});

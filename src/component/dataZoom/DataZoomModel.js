@@ -1,10 +1,10 @@
 /**
  * @file Data zoom model
  */
-define(function(require) {
 
-    var zrUtil = require('zrender/core/util');
-    var env = require('zrender/core/env');
+
+    var zrUtil = require('zrender/lib/core/util');
+    var env = require('zrender/lib/core/env');
     var echarts = require('../../echarts');
     var modelUtil = require('../../util/model');
     var helper = require('./helper');
@@ -475,5 +475,5 @@ define(function(require) {
         // Otherwise do nothing and use the merge result.
     }
 
-    return DataZoomModel;
-});
+    module.exports = DataZoomModel;
+

@@ -1,6 +1,6 @@
-define(function (require) {
 
-    return {
+
+    module.exports = {
 
         /**
          * @public
@@ -61,4 +61,3 @@ define(function (require) {
         }
     };
 
-});

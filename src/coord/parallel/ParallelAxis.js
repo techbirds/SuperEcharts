@@ -1,6 +1,6 @@
-define(function (require) {
 
-    var zrUtil = require('zrender/core/util');
+
+    var zrUtil = require('zrender/lib/core/util');
     var Axis = require('../Axis');
 
     /**
@@ -46,5 +46,4 @@ define(function (require) {
 
     zrUtil.inherits(ParallelAxis, Axis);
 
-    return ParallelAxis;
-});
+    module.exports = ParallelAxis;

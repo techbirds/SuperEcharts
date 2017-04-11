@@ -1,12 +1,12 @@
 /**
  * @file VisualMap preprocessor
  */
-define(function(require) {
 
-    var zrUtil = require('zrender/core/util');
+
+    var zrUtil = require('zrender/lib/core/util');
     var each = zrUtil.each;
 
-    return function (option) {
+    module.exports = function (option) {
         var visualMap = option && option.visualMap;
 
         if (!zrUtil.isArray(visualMap)) {
@@ -44,4 +44,3 @@ define(function(require) {
         return obj && obj.hasOwnProperty && obj.hasOwnProperty(name);
     }
 
-});

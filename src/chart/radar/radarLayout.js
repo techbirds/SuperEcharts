@@ -1,6 +1,6 @@
-define(function (require) {
 
-    return function (ecModel) {
+
+    module.exports = function (ecModel) {
         ecModel.eachSeriesByType('radar', function (seriesModel) {
             var data = seriesModel.getData();
             var points = [];
@@ -25,4 +25,3 @@ define(function (require) {
             });
         });
     };
-});

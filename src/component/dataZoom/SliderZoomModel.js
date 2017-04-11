@@ -1,7 +1,7 @@
 /**
  * @file Data zoom model
  */
-define(function(require) {
+
 
     var DataZoomModel = require('./DataZoomModel');
 
@@ -69,6 +69,5 @@ define(function(require) {
 
     });
 
-    return SliderZoomModel;
+    module.exports = SliderZoomModel;
 
-});

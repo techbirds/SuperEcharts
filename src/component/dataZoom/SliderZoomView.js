@@ -1,6 +1,6 @@
-define(function (require) {
 
-    var zrUtil = require('zrender/core/util');
+
+    var zrUtil = require('zrender/lib/core/util');
     var graphic = require('../../util/graphic');
     var throttle = require('../../util/throttle');
     var DataZoomView = require('./DataZoomView');
@@ -746,6 +746,5 @@ define(function (require) {
         return thisDim === 'x' ? 'y' : 'x';
     }
 
-    return SliderZoomView;
+    module.exports = SliderZoomView;
 
-});

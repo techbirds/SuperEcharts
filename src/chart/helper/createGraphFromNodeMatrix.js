@@ -1,11 +1,11 @@
-define(function (require) {
+
 
     var List = require('../../data/List');
     var Graph = require('../../data/Graph');
     var linkList = require('../../data/helper/linkList');
     var completeDimensions = require('../../data/helper/completeDimensions');
     var CoordinateSystem = require('../../CoordinateSystem');
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
     var createListFromArray = require('./createListFromArray');
 
     /**
@@ -26,7 +26,7 @@ define(function (require) {
      * @param {boolean} directed 是否是有向图
      * @return {module:echarts/data/Graph}
      */
-    return function (nodes, matrix, hostModel, directed) {
+    module.exports = function (nodes, matrix, hostModel, directed) {
         var graph = new Graph(directed);
         for (var i = 0; i < nodes.length; i++) {
             graph.addNode(zrUtil.retrieve(
@@ -89,4 +89,3 @@ define(function (require) {
 
         return graph;
     };
-});

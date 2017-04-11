@@ -1,7 +1,7 @@
 /**
  * DataZoom component entry
  */
-define(function (require) {
+
 
     var echarts = require('../echarts');
 
@@ -12,4 +12,3 @@ define(function (require) {
     require('./timeline/SliderTimelineModel');
     require('./timeline/SliderTimelineView');
 
-});

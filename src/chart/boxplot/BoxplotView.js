@@ -1,8 +1,7 @@
-define(function(require) {
+'use strict';
 
-    'use strict';
 
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
     var ChartView = require('../../view/Chart');
     var graphic = require('../../util/graphic');
     var whiskerBoxCommon = require('../helper/whiskerBoxCommon');
@@ -46,6 +45,5 @@ define(function(require) {
         graphic.setHoverStyle(itemGroup, hoverStyle);
     }
 
-    return BoxplotView;
+    module.exports = BoxplotView;
 
-});

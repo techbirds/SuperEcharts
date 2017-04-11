@@ -1,7 +1,7 @@
-define(function (require) {
+
 
     var graphic = require('../../util/graphic');
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
 
     var SMOOTH = 0.3;
 
@@ -234,5 +234,4 @@ define(function (require) {
             : (val == null || isNaN(val)); // axisType === 'value'
     }
 
-    return ParallelView;
-});
+    module.exports = ParallelView;

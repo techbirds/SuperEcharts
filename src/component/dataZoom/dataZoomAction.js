@@ -1,9 +1,9 @@
 /**
  * @file Data zoom action
  */
-define(function(require) {
 
-    var zrUtil = require('zrender/core/util');
+
+    var zrUtil = require('zrender/lib/core/util');
     var helper = require('./helper');
     var echarts = require('../../echarts');
 
@@ -40,4 +40,3 @@ define(function(require) {
 
     });
 
-});

@@ -1,8 +1,8 @@
-define(function (require) {
 
-    var zrUtil = require('zrender/core/util');
 
-    return function (ecModel) {
+    var zrUtil = require('zrender/lib/core/util');
+
+    module.exports = function (ecModel) {
 
         var processedMapType = {};
 
@@ -55,4 +55,3 @@ define(function (require) {
             processedMapType[mapType] = true;
         });
     };
-});

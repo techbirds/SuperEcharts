@@ -1,9 +1,9 @@
 // Backward compat for radar chart in 2
-define(function (require) {
 
-    var zrUtil = require('zrender/core/util');
 
-    return function (option) {
+    var zrUtil = require('zrender/lib/core/util');
+
+    module.exports = function (option) {
         var polarOptArr = option.polar;
         if (polarOptArr) {
             if (!zrUtil.isArray(polarOptArr)) {
@@ -33,4 +33,3 @@ define(function (require) {
             }
         });
     };
-});

@@ -1,11 +1,10 @@
-define(function(require) {
+'use strict';
 
-    'use strict';
 
     var createListFromArray = require('../helper/createListFromArray');
     var SeriesModel = require('../../model/Series');
 
-    return SeriesModel.extend({
+    module.exports = SeriesModel.extend({
 
         type: 'series.line',
 
@@ -84,4 +83,3 @@ define(function(require) {
             hoverLayerThreshold: Infinity
         }
     });
-});

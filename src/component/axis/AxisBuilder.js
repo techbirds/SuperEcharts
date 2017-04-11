@@ -1,13 +1,13 @@
-define(function (require) {
 
-    var zrUtil = require('zrender/core/util');
+
+    var zrUtil = require('zrender/lib/core/util');
     var formatUtil = require('../../util/format');
     var graphic = require('../../util/graphic');
     var Model = require('../../model/Model');
     var numberUtil = require('../../util/number');
     var remRadian = numberUtil.remRadian;
     var isRadianAroundZero = numberUtil.isRadianAroundZero;
-    var vec2 = require('zrender/core/vector');
+    var vec2 = require('zrender/lib/core/vector');
     var v2ApplyTransform = vec2.applyTransform;
     var retrieve = zrUtil.retrieve;
 
@@ -591,6 +591,5 @@ define(function (require) {
         return interval;
     };
 
-    return AxisBuilder;
+    module.exports = AxisBuilder;
 
-});

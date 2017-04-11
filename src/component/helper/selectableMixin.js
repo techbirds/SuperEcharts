@@ -5,11 +5,11 @@
  *
  * @module echarts/chart/helper/DataSelectable
  */
-define(function (require) {
 
-    var zrUtil = require('zrender/core/util');
 
-    return {
+    var zrUtil = require('zrender/lib/core/util');
+
+    module.exports = {
 
         updateSelectedMap: function (targetList) {
             this._selectTargetMap = zrUtil.reduce(targetList || [], function (targetMap, target) {
@@ -62,4 +62,3 @@ define(function (require) {
             return target && target.selected;
         }
     };
-});

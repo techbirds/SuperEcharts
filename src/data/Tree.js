@@ -3,9 +3,9 @@
  *
  * @module echarts/data/Tree
  */
-define(function(require) {
 
-    var zrUtil = require('zrender/core/util');
+
+    var zrUtil = require('zrender/lib/core/util');
     var Model = require('../model/Model');
     var List = require('./List');
     var linkList = require('./helper/linkList');
@@ -468,5 +468,4 @@ define(function(require) {
         child.parentNode = node;
     }
 
-    return Tree;
-});
+    module.exports = Tree;

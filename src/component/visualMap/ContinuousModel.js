@@ -1,10 +1,10 @@
 /**
  * @file Data zoom model
  */
-define(function(require) {
+
 
     var VisualMapModel = require('./VisualMapModel');
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
     var numberUtil = require('../../util/number');
 
     // Constant
@@ -244,6 +244,5 @@ define(function(require) {
         return stopValues;
     }
 
-    return ContinuousModel;
+    module.exports = ContinuousModel;
 
-});

@@ -2,7 +2,7 @@
  * @file Get initial data and define sankey view's series model
  * @author Deqing Li(annong035@gmail.com)
  */
-define(function (require) {
+
 
     var SeriesModel = require('../../model/Series');
     var createGraphFromNodeEdge = require('../helper/createGraphFromNodeEdge');
@@ -126,5 +126,5 @@ define(function (require) {
 
     });
 
-    return SankeySeries;
-});
+    module.exports = SankeySeries;
+

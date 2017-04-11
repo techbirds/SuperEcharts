@@ -1,6 +1,6 @@
-define(function (require) {
 
-    var zrUtil = require('zrender/core/util');
+
+    var zrUtil = require('zrender/lib/core/util');
     var axisHelper = require('./axisHelper');
 
     function getName(obj) {
@@ -30,10 +30,9 @@ define(function (require) {
         );
     }
 
-    return {
+    module.exports = {
 
         getFormattedLabels: getFormattedLabels,
 
         getCategories: getCategories
     };
-});

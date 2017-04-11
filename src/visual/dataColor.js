@@ -1,7 +1,7 @@
 // Pick color from palette for each data item
-define(function (require) {
 
-    return function (seriesType, ecModel) {
+
+    module.exports = function (seriesType, ecModel) {
         // Pie and funnel may use diferrent scope
         var paletteScope = {};
         ecModel.eachRawSeriesByType(seriesType, function (seriesModel) {
@@ -41,4 +41,3 @@ define(function (require) {
             }
         });
     };
-});

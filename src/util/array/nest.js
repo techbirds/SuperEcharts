@@ -1,6 +1,6 @@
-define(function (require) {
 
-    var zrUtil = require('zrender/core/util');
+
+    var zrUtil = require('zrender/lib/core/util');
 
     /**
      * nest helper used to group by the array.
@@ -102,5 +102,4 @@ define(function (require) {
             }
         };
     }
-    return nest;
-});
+    module.exports = nest;

@@ -1,8 +1,8 @@
-define(function (require) {
+
 
     var graphic = require('../../util/graphic');
     var HeatmapLayer = require('./HeatmapLayer');
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
 
     function getIsInPiecewiseRange(dataExtent, pieceList, selected) {
         var dataSpan = dataExtent[1] - dataExtent[0];
@@ -55,7 +55,7 @@ define(function (require) {
         return dimensions[0] === 'lng' && dimensions[1] === 'lat';
     }
 
-    return require('../../echarts').extendChartView({
+    module.exports = require('../../echarts').extendChartView({
 
         type: 'heatmap',
 
@@ -230,4 +230,3 @@ define(function (require) {
             this.group.add(img);
         }
     });
-});

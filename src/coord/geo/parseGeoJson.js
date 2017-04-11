@@ -2,9 +2,9 @@
  * Parse and decode geo json
  * @module echarts/coord/geo/parseGeoJson
  */
-define(function (require) {
 
-    var zrUtil = require('zrender/core/util');
+
+    var zrUtil = require('zrender/lib/core/util');
 
     var Region = require('./Region');
 
@@ -87,7 +87,7 @@ define(function (require) {
      * @param {Object} geoJson
      * @return {module:zrender/container/Group}
      */
-    return function (geoJson) {
+    module.exports = function (geoJson) {
 
         decode(geoJson);
 
@@ -111,4 +111,3 @@ define(function (require) {
             );
         });
     };
-});

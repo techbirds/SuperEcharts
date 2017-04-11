@@ -1,5 +1,5 @@
-define(function (require) {
-    return {
+
+    module.exports = {
         getAreaStyle: require('./makeStyleMapper')(
             [
                 ['fill', 'color'],
@@ -11,4 +11,3 @@ define(function (require) {
             ]
         )
     };
-});

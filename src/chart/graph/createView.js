@@ -1,8 +1,8 @@
-define(function (require) {
+
     // FIXME Where to create the simple view coordinate system
     var View = require('../../coord/View');
     var layout = require('../../util/layout');
-    var bbox = require('zrender/core/bbox');
+    var bbox = require('zrender/lib/core/bbox');
 
     function getViewRect(seriesModel, api, aspect) {
         var option = seriesModel.getBoxLayoutParams();
@@ -13,7 +13,7 @@ define(function (require) {
         });
     }
 
-    return function (ecModel, api) {
+    module.exports = function (ecModel, api) {
         var viewList = [];
         ecModel.eachSeriesByType('graph', function (seriesModel) {
             var coordSysType = seriesModel.get('coordinateSystem');
@@ -73,4 +73,3 @@ define(function (require) {
         });
         return viewList;
     };
-});

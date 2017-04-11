@@ -1,49 +1,48 @@
-define(function(require) {
+'use strict';
 
-    'use strict';
 
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
 
-    var pathTool = require('zrender/tool/path');
+    var pathTool = require('zrender/lib/tool/path');
     var round = Math.round;
-    var Path = require('zrender/graphic/Path');
-    var colorTool = require('zrender/tool/color');
-    var matrix = require('zrender/core/matrix');
-    var vector = require('zrender/core/vector');
+    var Path = require('zrender/lib/graphic/Path');
+    var colorTool = require('zrender/lib/tool/color');
+    var matrix = require('zrender/lib/core/matrix');
+    var vector = require('zrender/lib/core/vector');
 
     var graphic = {};
 
-    graphic.Group = require('zrender/container/Group');
+    graphic.Group = require('zrender/lib/container/Group');
 
-    graphic.Image = require('zrender/graphic/Image');
+    graphic.Image = require('zrender/lib/graphic/Image');
 
-    graphic.Text = require('zrender/graphic/Text');
+    graphic.Text = require('zrender/lib/graphic/Text');
 
-    graphic.Circle = require('zrender/graphic/shape/Circle');
+    graphic.Circle = require('zrender/lib/graphic/shape/Circle');
 
-    graphic.Sector = require('zrender/graphic/shape/Sector');
+    graphic.Sector = require('zrender/lib/graphic/shape/Sector');
 
-    graphic.Ring = require('zrender/graphic/shape/Ring');
+    graphic.Ring = require('zrender/lib/graphic/shape/Ring');
 
-    graphic.Polygon = require('zrender/graphic/shape/Polygon');
+    graphic.Polygon = require('zrender/lib/graphic/shape/Polygon');
 
-    graphic.Polyline = require('zrender/graphic/shape/Polyline');
+    graphic.Polyline = require('zrender/lib/graphic/shape/Polyline');
 
-    graphic.Rect = require('zrender/graphic/shape/Rect');
+    graphic.Rect = require('zrender/lib/graphic/shape/Rect');
 
-    graphic.Line = require('zrender/graphic/shape/Line');
+    graphic.Line = require('zrender/lib/graphic/shape/Line');
 
-    graphic.BezierCurve = require('zrender/graphic/shape/BezierCurve');
+    graphic.BezierCurve = require('zrender/lib/graphic/shape/BezierCurve');
 
-    graphic.Arc = require('zrender/graphic/shape/Arc');
+    graphic.Arc = require('zrender/lib/graphic/shape/Arc');
 
-    graphic.CompoundPath = require('zrender/graphic/CompoundPath');
+    graphic.CompoundPath = require('zrender/lib/graphic/CompoundPath');
 
-    graphic.LinearGradient = require('zrender/graphic/LinearGradient');
+    graphic.LinearGradient = require('zrender/lib/graphic/LinearGradient');
 
-    graphic.RadialGradient = require('zrender/graphic/RadialGradient');
+    graphic.RadialGradient = require('zrender/lib/graphic/RadialGradient');
 
-    graphic.BoundingRect = require('zrender/core/BoundingRect');
+    graphic.BoundingRect = require('zrender/lib/core/BoundingRect');
 
     /**
      * Extend shape with parameters
@@ -571,5 +570,4 @@ define(function(require) {
         });
     };
 
-    return graphic;
-});
+    module.exports = graphic;

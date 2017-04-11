@@ -1,6 +1,6 @@
-define(function (require) {
 
-    return function (ecModel) {
+
+    module.exports = function (ecModel) {
 
         var paletteScope = {};
         ecModel.eachSeriesByType('graph', function (seriesModel) {
@@ -39,4 +39,3 @@ define(function (require) {
             }
         });
     };
-});

@@ -1,9 +1,9 @@
-define(function(require) {
-    'use strict';
+'use strict';
+
 
     var List = require('../../data/List');
     var completeDimensions = require('../../data/helper/completeDimensions');
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
     var modelUtil = require('../../util/model');
     var CoordinateSystem = require('../../CoordinateSystem');
     var getDataItemValue = modelUtil.getDataItemValue;
@@ -276,6 +276,5 @@ define(function(require) {
         return nameList;
     }
 
-    return createListFromArray;
+    module.exports = createListFromArray;
 
-});

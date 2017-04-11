@@ -1,6 +1,6 @@
-define(function (require) {
 
-    var env = require('zrender/core/env');
+
+    var env = require('zrender/lib/core/env');
 
     function SaveAsImage (model) {
         this.model = model;
@@ -63,5 +63,4 @@ define(function (require) {
         'saveAsImage', SaveAsImage
     );
 
-    return SaveAsImage;
-});
+    module.exports = SaveAsImage;

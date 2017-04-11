@@ -1,11 +1,11 @@
-define(function(require) {
+
 
     var List = require('../../data/List');
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
     var SeriesModel = require('../../model/Series');
     var completeDimensions = require('../../data/helper/completeDimensions');
 
-    return SeriesModel.extend({
+    module.exports = SeriesModel.extend({
 
         type: 'series.parallel',
 
@@ -155,4 +155,3 @@ define(function(require) {
 
         return dataDims;
     }
-});

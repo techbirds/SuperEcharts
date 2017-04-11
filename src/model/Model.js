@@ -1,9 +1,9 @@
 /**
  * @module echarts/model/Model
  */
-define(function (require) {
 
-    var zrUtil = require('zrender/core/util');
+
+    var zrUtil = require('zrender/lib/core/util');
     var clazzUtil = require('../util/clazz');
 
     /**
@@ -153,5 +153,4 @@ define(function (require) {
     mixin(Model, require('./mixin/textStyle'));
     mixin(Model, require('./mixin/itemStyle'));
 
-    return Model;
-});
+    module.exports = Model;

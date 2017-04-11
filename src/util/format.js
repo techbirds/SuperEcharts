@@ -1,8 +1,8 @@
-define(function (require) {
 
-    var zrUtil = require('zrender/core/util');
+
+    var zrUtil = require('zrender/lib/core/util');
     var numberUtil = require('./number');
-    var textContain = require('zrender/contain/text');
+    var textContain = require('zrender/lib/contain/text');
 
     var formatUtil = {};
     /**
@@ -167,5 +167,4 @@ define(function (require) {
 
     formatUtil.truncateText = textContain.truncateText;
 
-    return formatUtil;
-});
+    module.exports = formatUtil;

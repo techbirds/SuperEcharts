@@ -1,4 +1,4 @@
-define(function (require) {
+
 
     require('../coord/single/singleCreator');
     require('./axis/SingleAxisView');
@@ -10,4 +10,3 @@ define(function (require) {
         type: 'single'
     });
 
-});

@@ -1,6 +1,6 @@
- define(function(require) {
+ 
 
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
 
     /**
      * @param {number} [time=500] Time in ms
@@ -97,5 +97,4 @@
         };
     }
 
-    return {createWrap: createWrap};
-});
+    module.exports = {createWrap: createWrap};

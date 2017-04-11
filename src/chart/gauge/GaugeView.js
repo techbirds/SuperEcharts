@@ -1,4 +1,4 @@
-define(function (require) {
+
 
     var PointerPath = require('./PointerPath');
 
@@ -405,5 +405,4 @@ define(function (require) {
         }
     });
 
-    return GaugeView;
-});
+    module.exports = GaugeView;

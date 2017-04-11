@@ -1,11 +1,11 @@
 // TODO Better on polar
-define(function (require) {
 
-    var zrUtil = require('zrender/core/util');
+
+    var zrUtil = require('zrender/lib/core/util');
     var List = require('../../data/List');
     var numberUtil = require('../../util/number');
     var graphic = require('../../util/graphic');
-    var colorUtil = require('zrender/tool/color');
+    var colorUtil = require('zrender/lib/tool/color');
 
     var markerHelper = require('./markerHelper');
 
@@ -303,4 +303,3 @@ define(function (require) {
         areaData.hasItemOption = true;
         return areaData;
     }
-});

@@ -1,7 +1,7 @@
-define(function (require) {
+
 
     var graphic = require('../../util/graphic');
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
 
     /**
      * Piece of pie including Sector, Label, LabelLine
@@ -212,5 +212,4 @@ define(function (require) {
         dispose: function () {}
     });
 
-    return Funnel;
-});
+    module.exports = Funnel;

@@ -1,7 +1,7 @@
 /**
  * @file Brush action
  */
-define(function(require) {
+
 
     var echarts = require('../../echarts');
 
@@ -47,4 +47,3 @@ define(function(require) {
          {type: 'brushSelect', event: 'brushSelected', update: 'none'},
         function () {}
     );
-});

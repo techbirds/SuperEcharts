@@ -1,9 +1,9 @@
-define(function (require) {
+
 
     var SeriesModel = require('../../model/Series');
     var createListFromArray = require('../helper/createListFromArray');
 
-    return SeriesModel.extend({
+    module.exports = SeriesModel.extend({
         type: 'series.heatmap',
 
         getInitialData: function (option, ecModel) {
@@ -35,4 +35,3 @@ define(function (require) {
             minOpacity: 0
         }
     });
-});

@@ -1,8 +1,8 @@
-define(function (require) {
+
 
     var simpleLayoutEdge = require('./simpleLayoutEdge');
 
-    return function (seriesModel) {
+    module.exports = function (seriesModel) {
         var coordSys = seriesModel.coordinateSystem;
         if (coordSys && coordSys.type !== 'view') {
             return;
@@ -16,4 +16,3 @@ define(function (require) {
 
         simpleLayoutEdge(graph);
     };
-});

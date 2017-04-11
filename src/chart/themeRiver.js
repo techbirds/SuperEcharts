@@ -1,7 +1,7 @@
-define(function (require) {
+
 
     var echarts = require('../echarts');
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
 
     require('../component/singleAxis');
 
@@ -16,4 +16,3 @@ define(function (require) {
     echarts.registerProcessor(
         zrUtil.curry(require('../processor/dataFilter'), 'themeRiver')
     );
-});

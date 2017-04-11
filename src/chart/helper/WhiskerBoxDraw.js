@@ -1,11 +1,11 @@
 /**
  * @module echarts/chart/helper/Symbol
  */
-define(function (require) {
 
-    var zrUtil = require('zrender/core/util');
+
+    var zrUtil = require('zrender/lib/core/util');
     var graphic = require('../../util/graphic');
-    var Path = require('zrender/graphic/Path');
+    var Path = require('zrender/lib/graphic/Path');
 
     var WhiskerPath = Path.extend({
 
@@ -211,5 +211,4 @@ define(function (require) {
         });
     };
 
-    return WhiskerBoxDraw;
-});
+    module.exports = WhiskerBoxDraw;

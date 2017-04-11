@@ -1,6 +1,6 @@
-define(function (require) {
 
-    var zrUtil = require('zrender/core/util');
+
+    var zrUtil = require('zrender/lib/core/util');
     var echarts = require('../echarts');
     var PRIORITY = echarts.PRIORITY;
 
@@ -21,4 +21,3 @@ define(function (require) {
 
     // In case developer forget to include grid component
     require('../component/grid');
-});

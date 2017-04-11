@@ -1,7 +1,7 @@
 /**
  * @file Data zoom processor
  */
-define(function (require) {
+
 
     var echarts = require('../../echarts');
 
@@ -54,4 +54,4 @@ define(function (require) {
         dataZoomModel.getAxisProxy(dimNames.name, axisIndex).filterData(dataZoomModel);
     }
 
-});
+

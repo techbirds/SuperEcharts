@@ -1,7 +1,7 @@
 /**
  * Parallel coordinate system creater.
  */
-define(function(require) {
+
 
     var Parallel = require('./Parallel');
 
@@ -37,4 +37,3 @@ define(function(require) {
 
     require('../../CoordinateSystem').register('parallel', {create: create});
 
-});

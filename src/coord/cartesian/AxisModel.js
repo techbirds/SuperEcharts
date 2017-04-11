@@ -1,9 +1,8 @@
-define(function(require) {
+'use strict';
 
-    'use strict';
 
     var ComponentModel = require('../../model/Component');
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
     var axisModelCreator = require('../axisModelCreator');
 
     var AxisModel = ComponentModel.extend({
@@ -71,5 +70,4 @@ define(function(require) {
     axisModelCreator('x', AxisModel, getAxisType, extraOption);
     axisModelCreator('y', AxisModel, getAxisType, extraOption);
 
-    return AxisModel;
-});
+    module.exports = AxisModel;

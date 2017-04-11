@@ -1,13 +1,12 @@
-define(function(require) {
+'use strict';
 
-    'use strict';
 
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
     var formatUtil = require('../util/format');
     var modelUtil = require('../util/model');
     var ComponentModel = require('./Component');
     var colorPaletteMixin = require('./mixin/colorPalette');
-    var env = require('zrender/core/env');
+    var env = require('zrender/lib/core/env');
     var layout = require('../util/layout');
 
     var encodeHTML = formatUtil.encodeHTML;
@@ -315,5 +314,4 @@ define(function(require) {
     zrUtil.mixin(SeriesModel, modelUtil.dataFormatMixin);
     zrUtil.mixin(SeriesModel, colorPaletteMixin);
 
-    return SeriesModel;
-});
+    module.exports = SeriesModel;

@@ -1,6 +1,5 @@
-define(function(require) {
+'use strict';
 
-    'use strict';
 
     var echarts = require('../echarts');
     var graphic = require('../util/graphic');
@@ -207,4 +206,3 @@ define(function(require) {
             group.add(rect);
         }
     });
-});

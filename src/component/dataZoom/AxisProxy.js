@@ -1,9 +1,9 @@
 /**
  * @file Axis operator
  */
-define(function(require) {
 
-    var zrUtil = require('zrender/core/util');
+
+    var zrUtil = require('zrender/lib/core/util');
     var numberUtil = require('../../util/number');
     var each = zrUtil.each;
     var asc = numberUtil.asc;
@@ -370,6 +370,5 @@ define(function(require) {
         );
     }
 
-    return AxisProxy;
+    module.exports = AxisProxy;
 
-});

@@ -1,7 +1,7 @@
-define(function(require) {
 
-    var polygonContain = require('zrender/contain/polygon').contain;
-    var BoundingRect = require('zrender/core/BoundingRect');
+
+    var polygonContain = require('zrender/lib/contain/polygon').contain;
+    var BoundingRect = require('zrender/lib/core/BoundingRect');
 
     // Key of the first level is brushType: `line`, `rect`, `polygon`.
     // Key of the second level is chart element type: `point`, `rect`.
@@ -119,6 +119,5 @@ define(function(require) {
         return v1 * v4 - v2 * v3;
     }
 
-    return selector;
+    module.exports = selector;
 
-});

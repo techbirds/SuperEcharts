@@ -3,8 +3,8 @@
  * @module echarts/chart/chord/chordCircularLayout
  * @author pissang(http://github.com/pissang)
  */
-define(function (require) {
-    var zrUtil = require('zrender/core/util');
+
+    var zrUtil = require('zrender/lib/core/util');
     var numberUtil = require('../../util/number');
     /**
      * @param {module:echarts/data/Graph} graph
@@ -95,7 +95,7 @@ define(function (require) {
         return a.size - b.size;
     };
 
-    return function (ecModel, api, payload) {
+    module.exports = function (ecModel, api, payload) {
         ecModel.eachSeriesByType('chord', function (chordSeries) {
             var graph = chordSeries.getGraph();
 
@@ -120,4 +120,3 @@ define(function (require) {
             });
         });
     };
-});

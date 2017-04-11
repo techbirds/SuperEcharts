@@ -1,8 +1,8 @@
-define(function (require) {
 
-    var zrUtil = require('zrender/core/util');
 
-    return function (option) {
+    var zrUtil = require('zrender/lib/core/util');
+
+    module.exports = function (option) {
         // Save geoCoord
         var mapSeries = [];
         zrUtil.each(option.series, function (seriesOpt) {
@@ -17,4 +17,3 @@ define(function (require) {
             zrUtil.defaults(seriesOpt, seriesOpt.mapLocation);
         });
     };
-});

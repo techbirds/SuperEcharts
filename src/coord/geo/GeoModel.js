@@ -1,10 +1,9 @@
-define(function (require) {
+'use strict';
 
-    'use strict';
     var modelUtil = require('../../util/model');
     var ComponentModel = require('../../model/Component');
     var Model = require('../../model/Model');
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
 
     var selectableMixin = require('../../component/helper/selectableMixin');
 
@@ -160,5 +159,4 @@ define(function (require) {
 
     zrUtil.mixin(GeoModel, selectableMixin);
 
-    return GeoModel;
-});
+    module.exports = GeoModel;

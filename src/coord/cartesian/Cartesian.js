@@ -1,13 +1,12 @@
+'use strict';
 /**
  * Cartesian coordinate system
  * @module  echarts/coord/Cartesian
  *
  */
-define(function (require) {
 
-    'use strict';
 
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
 
     function dimAxisMapper(dim) {
         return this._axes[dim];
@@ -110,5 +109,4 @@ define(function (require) {
         }
     };
 
-    return Cartesian;
-});
+    module.exports = Cartesian;

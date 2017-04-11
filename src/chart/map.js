@@ -1,4 +1,4 @@
-define(function (require) {
+
 
     var echarts = require('../echarts');
     var PRIORITY = echarts.PRIORITY;
@@ -32,4 +32,3 @@ define(function (require) {
         event: 'mapunselected',
         method: 'unSelect'
     }]);
-});

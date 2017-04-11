@@ -1,4 +1,4 @@
-define(function (require) {
+
 
     /**
      * Calculate slider move result.
@@ -15,7 +15,7 @@ define(function (require) {
      * @param {number} handleIndex If mode is 'rigid', handleIndex is not required.
      * @param {Array.<number>} The input handleEnds.
      */
-    return function (delta, handleEnds, extent, mode, handleIndex) {
+    module.exports = function (delta, handleEnds, extent, mode, handleIndex) {
         if (!delta) {
             return handleEnds;
         }
@@ -51,4 +51,3 @@ define(function (require) {
             return delta;
         }
     };
-});

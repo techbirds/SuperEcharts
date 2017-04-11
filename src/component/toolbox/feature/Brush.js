@@ -1,8 +1,8 @@
-define(function(require) {
-    'use strict';
+'use strict';
+
 
     var featureManager = require('../featureManager');
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
 
     function Brush(model, ecModel, api) {
         this.model = model;
@@ -116,5 +116,4 @@ define(function(require) {
 
     featureManager.register('brush', Brush);
 
-    return Brush;
-});
+    module.exports = Brush;

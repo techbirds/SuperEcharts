@@ -1,7 +1,7 @@
-define(function (require) {
+
 
     var SymbolDraw = require('../../chart/helper/SymbolDraw');
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
     var numberUtil = require('../../util/number');
 
     var List = require('../../data/List');
@@ -153,4 +153,3 @@ define(function (require) {
         return mpData;
     }
 
-});

@@ -1,4 +1,4 @@
-define(function (require) {
+
 
     var SymbolDraw = require('../helper/SymbolDraw');
     var EffectSymbol = require('../helper/EffectSymbol');
@@ -28,4 +28,3 @@ define(function (require) {
 
         dispose: function () {}
     });
-});

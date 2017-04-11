@@ -1,5 +1,5 @@
 // Fix for 南海诸岛
-define(function (require) {
+
 
     var Region = require('../Region');
 
@@ -30,11 +30,10 @@ define(function (require) {
             points[i][k][1] += geoCoord[1];
         }
     }
-    return function (geo) {
+    module.exports = function (geo) {
         if (geo.map === 'china') {
             geo.regions.push(new Region(
                 '南海诸岛', points, geoCoord
             ));
         }
     };
-});

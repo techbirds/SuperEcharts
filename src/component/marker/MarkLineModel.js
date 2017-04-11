@@ -1,6 +1,6 @@
-define(function (require) {
 
-    return require('./MarkerModel').extend({
+
+    module.exports = require('./MarkerModel').extend({
 
         type: 'markLine',
 
@@ -37,4 +37,3 @@ define(function (require) {
             animationEasing: 'linear'
         }
     });
-});

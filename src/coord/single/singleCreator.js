@@ -1,7 +1,7 @@
 /**
  * Single coordinate system creator.
  */
-define(function (require) {
+
 
     var Single = require('./Single');
 
@@ -43,4 +43,3 @@ define(function (require) {
         create: create,
         dimensions: Single.prototype.dimensions
     });
-});

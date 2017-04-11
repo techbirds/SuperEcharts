@@ -6,9 +6,9 @@
  */
 
 // FIXME only one data
-define(function (require) {
 
-    var zrUtil = require('zrender/core/util');
+
+    var zrUtil = require('zrender/lib/core/util');
     var Scale = require('./Scale');
 
     var scaleProto = Scale.prototype;
@@ -91,5 +91,4 @@ define(function (require) {
         return new OrdinalScale();
     };
 
-    return OrdinalScale;
-});
+    module.exports = OrdinalScale;

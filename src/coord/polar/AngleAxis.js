@@ -1,7 +1,7 @@
-define(function(require) {
-    'use strict';
+'use strict';
 
-    var zrUtil = require('zrender/core/util');
+
+    var zrUtil = require('zrender/lib/core/util');
     var Axis = require('../Axis');
 
     function AngleAxis(scale, angleExtent) {
@@ -32,5 +32,4 @@ define(function(require) {
 
     zrUtil.inherits(AngleAxis, Axis);
 
-    return AngleAxis;
-});
+    module.exports = AngleAxis;

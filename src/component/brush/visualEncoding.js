@@ -1,12 +1,12 @@
 /**
  * @file Brush visual coding.
  */
-define(function (require) {
+
 
     var echarts = require('../../echarts');
     var visualSolution = require('../../visual/visualSolution');
-    var zrUtil = require('zrender/core/util');
-    var BoundingRect = require('zrender/core/BoundingRect');
+    var zrUtil = require('zrender/lib/core/util');
+    var BoundingRect = require('zrender/lib/core/BoundingRect');
     var selector = require('./selector');
     var throttle = require('../../util/throttle');
     var brushHelper = require('../helper/brushHelper');
@@ -320,4 +320,4 @@ define(function (require) {
             minMax[1][1] - minMax[1][0]
         );
     }
-});
+

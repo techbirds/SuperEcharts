@@ -1,10 +1,10 @@
 /**
  * @module echarts/chart/helper/Line
  */
-define(function (require) {
+
 
     var graphic = require('../../util/graphic');
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
 
     /**
      * @constructor
@@ -81,5 +81,4 @@ define(function (require) {
 
     zrUtil.inherits(Polyline, graphic.Group);
 
-    return Polyline;
-});
+    module.exports = Polyline;

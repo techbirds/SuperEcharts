@@ -1,6 +1,6 @@
-define(function (require) {
 
-    return require('./MarkerModel').extend({
+
+    module.exports = require('./MarkerModel').extend({
 
         type: 'markPoint',
 
@@ -30,4 +30,3 @@ define(function (require) {
             }
         }
     });
-});

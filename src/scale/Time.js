@@ -3,9 +3,9 @@
  * @module echarts/coord/scale/Time
  */
 
-define(function (require) {
 
-    var zrUtil = require('zrender/core/util');
+
+    var zrUtil = require('zrender/lib/core/util');
     var numberUtil = require('../util/number');
     var formatUtil = require('../util/format');
 
@@ -157,5 +157,4 @@ define(function (require) {
         return new TimeScale();
     };
 
-    return TimeScale;
-});
+    module.exports = TimeScale;

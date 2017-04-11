@@ -1,6 +1,6 @@
-define(function (require) {
 
-    var zrUtil = require('zrender/core/util');
+
+    var zrUtil = require('zrender/lib/core/util');
 
     var clazz = {};
 
@@ -220,5 +220,4 @@ define(function (require) {
         // });
     };
 
-    return clazz;
-});
+    module.exports = clazz;

@@ -1,9 +1,9 @@
-define(function(require) {
-    'use strict';
+'use strict';
+
 
     var features = {};
 
-    return {
+    module.exports = {
         register: function (name, ctor) {
             features[name] = ctor;
         },
@@ -12,4 +12,3 @@ define(function(require) {
             return features[name];
         }
     };
-});

@@ -1,11 +1,10 @@
-define(function(require) {
+'use strict';
 
-    'use strict';
 
     var SeriesModel = require('../../model/Series');
     var List = require('../../data/List');
     var completeDimensions = require('../../data/helper/completeDimensions');
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
 
     var RadarSeries = SeriesModel.extend({
 
@@ -71,5 +70,4 @@ define(function(require) {
         }
     });
 
-    return RadarSeries;
-});
+    module.exports = RadarSeries;

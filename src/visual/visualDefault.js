@@ -1,9 +1,9 @@
 /**
  * @file Visual mapping.
  */
-define(function (require) {
 
-    var zrUtil = require('zrender/core/util');
+
+    var zrUtil = require('zrender/lib/core/util');
 
     var visualDefault = {
 
@@ -65,6 +65,6 @@ define(function (require) {
         }
     };
 
-    return visualDefault;
+    module.exports = visualDefault;
 
-});
+

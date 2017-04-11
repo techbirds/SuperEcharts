@@ -1,9 +1,8 @@
-define(function (require) {
+'use strict';
 
-    'use strict';
 
     var List = require('../../data/List');
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
     var modelUtil = require('../../util/model');
     var Model = require('../../model/Model');
 
@@ -257,5 +256,4 @@ define(function (require) {
         }
     });
 
-    return GraphSeries;
-});
+    module.exports = GraphSeries;

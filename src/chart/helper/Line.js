@@ -1,14 +1,14 @@
 /**
  * @module echarts/chart/helper/Line
  */
-define(function (require) {
+
 
     var symbolUtil = require('../../util/symbol');
-    var vector = require('zrender/core/vector');
-    // var matrix = require('zrender/core/matrix');
+    var vector = require('zrender/lib/core/vector');
+    // var matrix = require('zrender/lib/core/matrix');
     var LinePath = require('./LinePath');
     var graphic = require('../../util/graphic');
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
     var numberUtil = require('../../util/number');
 
     var SYMBOL_CATEGORIES = ['fromSymbol', 'toSymbol'];
@@ -363,5 +363,4 @@ define(function (require) {
 
     zrUtil.inherits(Line, graphic.Group);
 
-    return Line;
-});
+    module.exports = Line;

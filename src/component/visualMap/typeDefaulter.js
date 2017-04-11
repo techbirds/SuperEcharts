@@ -1,4 +1,4 @@
-define(function (require) {
+
 
     require('../../model/Component').registerSubTypeDefaulter('visualMap', function (option) {
         // Compatible with ec2, when splitNumber === 0, continuous visualMap will be used.
@@ -16,4 +16,3 @@ define(function (require) {
             ? 'continuous' : 'piecewise';
     });
 
-});

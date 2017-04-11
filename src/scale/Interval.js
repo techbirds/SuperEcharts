@@ -3,7 +3,7 @@
  * @module echarts/scale/Interval
  */
 
-define(function (require) {
+
 
     var numberUtil = require('../util/number');
     var formatUtil = require('../util/format');
@@ -224,5 +224,5 @@ define(function (require) {
         return new IntervalScale();
     };
 
-    return IntervalScale;
-});
+    module.exports = IntervalScale;
+

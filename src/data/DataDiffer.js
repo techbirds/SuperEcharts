@@ -1,5 +1,5 @@
-define(function(require) {
-    'use strict';
+'use strict';
+
 
     function defaultKeyGetter(item) {
         return item;
@@ -120,5 +120,4 @@ define(function(require) {
         }
     }
 
-    return DataDiffer;
-});
+    module.exports = DataDiffer;

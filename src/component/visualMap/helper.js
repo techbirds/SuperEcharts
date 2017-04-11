@@ -1,6 +1,6 @@
-define(function(require) {
 
-    var zrUtil = require('zrender/core/util');
+
+    var zrUtil = require('zrender/lib/core/util');
     var layout = require('../../util/layout');
 
     var helper = {
@@ -62,5 +62,5 @@ define(function(require) {
     };
 
 
-    return helper;
-});
+    module.exports = helper;
+

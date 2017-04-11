@@ -1,13 +1,13 @@
- define(function(require) {
+ 
 
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
     var graphic = require('../../util/graphic');
     var DataDiffer = require('../../data/DataDiffer');
     var helper = require('./helper');
     var Breadcrumb = require('./Breadcrumb');
     var RoamController = require('../../component/helper/RoamController');
-    var BoundingRect = require('zrender/core/BoundingRect');
-    var matrix = require('zrender/core/matrix');
+    var BoundingRect = require('zrender/lib/core/BoundingRect');
+    var matrix = require('zrender/lib/core/matrix');
     var animationUtil = require('../../util/animation');
     var bind = zrUtil.bind;
     var Group = graphic.Group;
@@ -21,7 +21,7 @@
     var Z_BG = 1;
     var Z_CONTENT = 2;
 
-    return require('../../echarts').extendChartView({
+    module.exports = require('../../echarts').extendChartView({
 
         type: 'treemap',
 
@@ -876,4 +876,3 @@
         return (zb - 1) / zb;
     }
 
-});

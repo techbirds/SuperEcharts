@@ -1,11 +1,11 @@
-define(function(require) {
+
 
     require('../coord/parallel/parallelCreator');
     require('../coord/parallel/ParallelModel');
     require('./parallelAxis');
 
     var echarts = require('../echarts');
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
 
     var CLICK_THRESHOLD = 5; // > 4
 
@@ -55,4 +55,3 @@ define(function(require) {
         require('../coord/parallel/parallelPreprocessor')
     );
 
-});

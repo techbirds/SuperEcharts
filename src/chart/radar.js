@@ -1,6 +1,6 @@
-define(function (require) {
 
-    var zrUtil = require('zrender/core/util');
+
+    var zrUtil = require('zrender/lib/core/util');
     var echarts = require('../echarts');
 
     // Must use radar component
@@ -20,4 +20,3 @@ define(function (require) {
     );
 
     echarts.registerPreprocessor(require('./radar/backwardCompat'));
-});

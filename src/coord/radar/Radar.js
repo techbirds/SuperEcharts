@@ -1,7 +1,7 @@
 // TODO clockwise
-define(function (require) {
 
-    var zrUtil = require('zrender/core/util');
+
+    var zrUtil = require('zrender/lib/core/util');
     var IndicatorAxis = require('./IndicatorAxis');
     var IntervalScale = require('../../scale/Interval');
     var numberUtil = require('../../util/number');
@@ -230,5 +230,4 @@ define(function (require) {
     };
 
     require('../../CoordinateSystem').register('radar', Radar);
-    return Radar;
-});
+    module.exports = Radar;

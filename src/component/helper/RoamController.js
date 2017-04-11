@@ -2,11 +2,11 @@
  * @module echarts/component/helper/RoamController
  */
 
-define(function (require) {
 
-    var Eventful = require('zrender/mixin/Eventful');
-    var zrUtil = require('zrender/core/util');
-    var eventTool = require('zrender/core/event');
+
+    var Eventful = require('zrender/lib/mixin/Eventful');
+    var zrUtil = require('zrender/lib/core/util');
+    var eventTool = require('zrender/lib/core/event');
     var interactionMutex = require('./interactionMutex');
 
     function mousedown(e) {
@@ -225,5 +225,4 @@ define(function (require) {
 
     zrUtil.mixin(RoamController, Eventful);
 
-    return RoamController;
-});
+    module.exports = RoamController;

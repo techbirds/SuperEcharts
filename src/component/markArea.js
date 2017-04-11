@@ -1,4 +1,4 @@
-define(function (require) {
+
 
     require('./marker/MarkAreaModel');
     require('./marker/MarkAreaView');
@@ -7,4 +7,3 @@ define(function (require) {
         // Make sure markArea component is enabled
         opt.markArea = opt.markArea || {};
     });
-});

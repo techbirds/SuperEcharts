@@ -1,5 +1,5 @@
-define(function () {
-    return {
+
+    module.exports = {
         clearColorPalette: function () {
             this._colorIdx = 0;
             this._colorNameMap = {};
@@ -26,4 +26,3 @@ define(function () {
             return color;
         }
     };
-});

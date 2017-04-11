@@ -1,7 +1,7 @@
-define(function (require) {
+
 
     var DataZoomView = require('./DataZoomView');
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
     var sliderMove = require('../helper/sliderMove');
     var roams = require('./roams');
     var bind = zrUtil.bind;
@@ -225,5 +225,4 @@ define(function (require) {
         return range;
     }
 
-    return InsideZoomView;
-});
+    module.exports = InsideZoomView;

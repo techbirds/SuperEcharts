@@ -1,11 +1,11 @@
-define(function(require) {
+
 
     var VisualMapView = require('./VisualMapView');
     var graphic = require('../../util/graphic');
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
     var numberUtil = require('../../util/number');
     var sliderMove = require('../helper/sliderMove');
-    var LinearGradient = require('zrender/graphic/LinearGradient');
+    var LinearGradient = require('zrender/lib/graphic/LinearGradient');
     var helper = require('./helper');
     var modelUtil = require('../../util/model');
 
@@ -823,5 +823,5 @@ define(function(require) {
         return !visualMapModel.get('realtime') && visualMapModel.get('hoverLinkOnHandle');
     }
 
-    return ContinuousView;
-});
+    module.exports = ContinuousView;
+

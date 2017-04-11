@@ -1,11 +1,11 @@
 // TODO Batch by color
 
-define(function (require) {
+
 
     var graphic = require('../../util/graphic');
 
-    var quadraticContain = require('zrender/contain/quadratic');
-    var lineContain = require('zrender/contain/line');
+    var quadraticContain = require('zrender/lib/contain/quadratic');
+    var lineContain = require('zrender/lib/contain/line');
 
     var LargeLineShape = graphic.extendShape({
         shape: {
@@ -139,5 +139,4 @@ define(function (require) {
         this.group.removeAll();
     };
 
-    return LargeLineDraw;
-});
+    module.exports = LargeLineDraw;

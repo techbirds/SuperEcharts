@@ -1,6 +1,6 @@
-define(function (require) {
 
-    var zrUtil = require('zrender/core/util');
+
+    var zrUtil = require('zrender/lib/core/util');
     var AxisBuilder = require('./AxisBuilder');
     var BrushController = require('../helper/BrushController');
     var graphic = require('../../util/graphic');
@@ -172,5 +172,4 @@ define(function (require) {
             )[0] === axisModel;
     }
 
-    return AxisView;
-});
+    module.exports = AxisView;

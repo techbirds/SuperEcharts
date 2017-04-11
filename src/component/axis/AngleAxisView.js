@@ -1,7 +1,7 @@
-define(function (require) {
-    'use strict';
+'use strict';
 
-    var zrUtil = require('zrender/core/util');
+
+    var zrUtil = require('zrender/lib/core/util');
     var graphic = require('../../util/graphic');
     var Model = require('../../model/Model');
 
@@ -226,4 +226,3 @@ define(function (require) {
             }
         }
     });
-});

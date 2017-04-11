@@ -1,10 +1,9 @@
+'use strict';
 // Symbol factory
-define(function(require) {
 
-    'use strict';
 
     var graphic = require('./graphic');
-    var BoundingRect = require('zrender/core/BoundingRect');
+    var BoundingRect = require('zrender/lib/core/BoundingRect');
 
     /**
      * Triangle shape
@@ -352,5 +351,4 @@ define(function(require) {
         }
     };
 
-    return symbolUtil;
-});
+    module.exports = symbolUtil;

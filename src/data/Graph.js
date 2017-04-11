@@ -1,14 +1,13 @@
+'use strict';
 /**
  * Graph data structure
  *
  * @module echarts/data/Graph
  * @author Yi Shen(https://www.github.com/pissang)
  */
-define(function(require) {
 
-    'use strict';
 
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
 
     /**
      * @alias module:echarts/data/Graph
@@ -511,5 +510,4 @@ define(function(require) {
     Graph.Node = Node;
     Graph.Edge = Edge;
 
-    return Graph;
-});
+    module.exports = Graph;

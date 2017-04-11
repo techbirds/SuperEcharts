@@ -1,8 +1,8 @@
-define(function (require) {
+
 
     var borderColorQuery = ['itemStyle', 'normal', 'borderColor'];
 
-    return function (ecModel, api) {
+    module.exports = function (ecModel, api) {
 
         var globalColors = ecModel.get('color');
 
@@ -31,4 +31,3 @@ define(function (require) {
         });
 
     };
-});

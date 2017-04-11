@@ -1,13 +1,13 @@
-define(function (require) {
+
 
     var VisualMapping = require('../../visual/VisualMapping');
-    var zrColor = require('zrender/tool/color');
-    var zrUtil = require('zrender/core/util');
+    var zrColor = require('zrender/lib/tool/color');
+    var zrUtil = require('zrender/lib/core/util');
     var isArray = zrUtil.isArray;
 
     var ITEM_STYLE_NORMAL = 'itemStyle.normal';
 
-    return function (ecModel, api, payload) {
+    module.exports = function (ecModel, api, payload) {
 
         var condition = {mainType: 'series', subType: 'treemap', query: payload};
         ecModel.eachComponent(condition, function (seriesModel) {
@@ -224,4 +224,3 @@ define(function (require) {
         return childVisuals;
     }
 
-});

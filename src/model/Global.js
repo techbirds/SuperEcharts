@@ -4,7 +4,7 @@
  * @module {echarts/model/Global}
  */
 
-define(function (require) {
+
 
     /**
      * Caution: If the mechanism should be changed some day, these cases
@@ -19,7 +19,7 @@ define(function (require) {
      * `mergeOption` in module:echarts/model/OptionManager.
      */
 
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
     var modelUtil = require('../util/model');
     var Model = require('./Model');
     var each = zrUtil.each;
@@ -702,5 +702,4 @@ define(function (require) {
 
     zrUtil.mixin(GlobalModel, require('./mixin/colorPalette'));
 
-    return GlobalModel;
-});
+    module.exports = GlobalModel;

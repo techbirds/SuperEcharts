@@ -1,4 +1,4 @@
-define(function (require) {
+
 
     var layout = require('../../util/layout');
     var number = require('../../util/number');
@@ -94,7 +94,7 @@ define(function (require) {
         });
     }
 
-    return function (ecModel, api, payload) {
+    module.exports = function (ecModel, api, payload) {
         ecModel.eachSeriesByType('funnel', function (seriesModel) {
             var data = seriesModel.getData();
             var sort = seriesModel.get('sort');
@@ -167,4 +167,3 @@ define(function (require) {
             labelLayout(data);
         });
     };
-});

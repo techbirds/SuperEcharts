@@ -1,6 +1,6 @@
-define(function (require) {
 
-    // var zrUtil = require('zrender/core/util');
+
+    // var zrUtil = require('zrender/lib/core/util');
     var graphic = require('../../util/graphic');
 
     var MapDraw = require('../../component/helper/MapDraw');
@@ -142,4 +142,3 @@ define(function (require) {
             });
         }
     });
-});

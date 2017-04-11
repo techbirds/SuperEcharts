@@ -1,5 +1,5 @@
-define(function (require) {
-    return function (ecModel) {
+
+    module.exports = function (ecModel) {
         ecModel.eachSeriesByType('map', function (seriesModel) {
             var colorList = seriesModel.get('color');
             var itemStyleModel = seriesModel.getModel('itemStyle.normal');
@@ -14,4 +14,3 @@ define(function (require) {
             });
         });
     };
-});

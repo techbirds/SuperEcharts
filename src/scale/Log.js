@@ -2,9 +2,9 @@
  * Log scale
  * @module echarts/scale/Log
  */
-define(function (require) {
 
-    var zrUtil = require('zrender/core/util');
+
+    var zrUtil = require('zrender/lib/core/util');
     var Scale = require('./Scale');
     var numberUtil = require('../util/number');
 
@@ -178,5 +178,4 @@ define(function (require) {
         return roundingErrorFix(val, getPrecisionSafe(originalVal));
     }
 
-    return LogScale;
-});
+    module.exports = LogScale;

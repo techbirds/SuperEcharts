@@ -1,6 +1,6 @@
-define(function (require) {
 
-    return require('zrender/graphic/Path').extend({
+
+    module.exports = require('zrender/lib/graphic/Path').extend({
 
         type: 'echartsGaugePointer',
 
@@ -44,4 +44,3 @@ define(function (require) {
             return;
         }
     });
-});

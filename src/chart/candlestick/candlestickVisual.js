@@ -1,11 +1,11 @@
-define(function (require) {
+
 
     var positiveBorderColorQuery = ['itemStyle', 'normal', 'borderColor'];
     var negativeBorderColorQuery = ['itemStyle', 'normal', 'borderColor0'];
     var positiveColorQuery = ['itemStyle', 'normal', 'color'];
     var negativeColorQuery = ['itemStyle', 'normal', 'color0'];
 
-    return function (ecModel, api) {
+    module.exports = function (ecModel, api) {
 
         ecModel.eachRawSeriesByType('candlestick', function (seriesModel) {
 
@@ -37,4 +37,3 @@ define(function (require) {
         });
 
     };
-});

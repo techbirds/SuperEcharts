@@ -3,12 +3,12 @@
  *
  * TODO Default cartesian
  */
-define(function(require, factory) {
+var factory = exports;
 
     var layout = require('../../util/layout');
     var axisHelper = require('../../coord/axisHelper');
 
-    var zrUtil = require('zrender/core/util');
+    var zrUtil = require('zrender/lib/core/util');
     var Cartesian2D = require('./Cartesian2D');
     var Axis2D = require('./Axis2D');
 
@@ -560,5 +560,4 @@ define(function(require, factory) {
 
     require('../../CoordinateSystem').register('cartesian2d', Grid);
 
-    return Grid;
-});
+    module.exports = Grid;

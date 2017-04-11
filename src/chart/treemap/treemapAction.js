@@ -1,7 +1,7 @@
 /**
  * @file Treemap action
  */
-define(function(require) {
+
 
     var echarts = require('../../echarts');
     var helper = require('./helper');
@@ -42,4 +42,3 @@ define(function(require) {
         }
     );
 
-});

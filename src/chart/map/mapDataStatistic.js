@@ -1,6 +1,6 @@
-define(function (require) {
 
-    var zrUtil = require('zrender/core/util');
+
+    var zrUtil = require('zrender/lib/core/util');
 
     // FIXME 公用？
     /**
@@ -50,7 +50,7 @@ define(function (require) {
         });
     }
 
-    return function (ecModel) {
+    module.exports = function (ecModel) {
         var seriesGroupByMapType = {};
         ecModel.eachSeriesByType('map', function (seriesModel) {
             var mapType = seriesModel.get('map');
@@ -80,4 +80,3 @@ define(function (require) {
             }
         });
     };
-});

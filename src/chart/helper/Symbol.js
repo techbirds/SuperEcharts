@@ -1,9 +1,9 @@
 /**
  * @module echarts/chart/helper/Symbol
  */
-define(function (require) {
 
-    var zrUtil = require('zrender/core/util');
+
+    var zrUtil = require('zrender/lib/core/util');
     var symbolUtil = require('../../util/symbol');
     var graphic = require('../../util/graphic');
     var numberUtil = require('../../util/number');
@@ -294,5 +294,4 @@ define(function (require) {
 
     zrUtil.inherits(Symbol, graphic.Group);
 
-    return Symbol;
-});
+    module.exports = Symbol;

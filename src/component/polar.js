@@ -1,5 +1,5 @@
-define(function(require) {
-    'use strict';
+'use strict';
+
 
     require('../coord/polar/polarCreator');
     require('./angleAxis');
@@ -9,4 +9,3 @@ define(function(require) {
     require('../echarts').extendComponentView({
         type: 'polar'
     });
-});

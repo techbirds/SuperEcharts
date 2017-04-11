@@ -1,10 +1,10 @@
-define(function (require) {
+
 
     var CANDLE_MIN_WIDTH = 2;
     var CANDLE_MIN_NICE_WIDTH = 5;
     var GPA_MIN = 4;
 
-    return function (ecModel) {
+    module.exports = function (ecModel) {
 
         ecModel.eachSeriesByType('candlestick', function (seriesModel) {
 
@@ -116,4 +116,3 @@ define(function (require) {
             : Math.max(bandWidth - GPA_MIN, CANDLE_MIN_WIDTH);
     }
 
-});

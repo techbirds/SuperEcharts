@@ -1,4 +1,4 @@
-define(function (require) {
+
 
     require('./lines/LinesSeries');
     require('./lines/LinesView');
@@ -7,4 +7,3 @@ define(function (require) {
     echarts.registerLayout(
         require('./lines/linesLayout')
     );
-});
