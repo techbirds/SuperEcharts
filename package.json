@@ -18,7 +18,8 @@
     },
     "scripts": {
         "prepublish": "node build/amd2common.js",
-        "dev": "webpack-dev-server --content-base example/ --open --inline --hot --compress --history-api-fallback --port 8081 --config ./webpack.dev.config.js"
+        "dev": "webpack-dev-server --content-base example/ --open --inline --hot --compress --history-api-fallback --port 8081 --config ./webpack.dev.config.js",
+        "build": "./build/build.sh"
     },
     "dependencies": {
         "zrender": "^3.2.1"
