@@ -13,6 +13,10 @@
         // 基于准备好的dom，初始化echarts实例
         var myChart = echarts.init(document.getElementById('main'));
 
+        myChart.on('click', function(e) {
+            alert(e);
+        })
+
         // 指定图表的配置项和数据
         var option = option = {
             title: {
@@ -46,7 +50,7 @@
                 name: 'Step Start',
                 type: 'line',
                 step: 'start',
-                data: [120, 132, 101, 134, 90, 230, 210]
+                data: [120, 132, 301, 134, 90, 230, 210]
             }, {
                 name: 'Step Middle',
                 type: 'line',
