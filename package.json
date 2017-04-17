@@ -1,25 +1,20 @@
 {
-    "name": "echarts",
-    "version": "3.3.2",
+    "name": "apm-echarts",
+    "version": "1.0.0",
     "description": "A powerful charting and visualization library for browser",
     "keywords": [
         "visualization",
         "canvas"
     ],
-    "homepage": "http://echarts.baidu.com/",
-    "author": "echarts",
+    "author": "wangdong",
     "contributors": [{
-        "name": "erik",
-        "email": "errorrik@gmail.com"
+        "name": "wangdong",
+        "email": "hzwangdong5@crop.netease.com"
     }],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/ecomfe/echarts.git"
-    },
     "scripts": {
         "prepublish": "node build/amd2common.js",
         "dev": "webpack-dev-server --content-base example/ --open --inline --hot --compress --history-api-fallback --port 8081 --config ./webpack.dev.config.js",
-        "build": "./build/build.sh"
+        "dist": "./build/build.sh"
     },
     "dependencies": {
         "zrender": "^3.2.1"
