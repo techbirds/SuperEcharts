@@ -979,7 +979,7 @@ require('../../echarts').extendComponentView({
         var baseAxis = coordSys.getBaseAxis();
         var baseDimIndex = baseAxis.dim === 'x' || baseAxis.dim === 'radius' ? 0 : 1;
 
-        var payloadBatch = zrUtil.map(seriesList, function(series) {
+        var payloadBatch = zrUtil.map(seriesList, function(series, index) {
             return {
                 seriesIndex: series.seriesIndex,
                 dataIndexInside: series.getAxisTooltipDataIndex ?
@@ -1066,7 +1066,12 @@ require('../../echarts').extendComponentView({
 
         if (baseAxis && rootTooltipModel.get('showContent') && rootTooltipModel.get('show')) {
             // 获取最近节点的内容信息并组装成html字符串
-            var series = seriesList[payload[0].seriesIndex];
+            var series;
+            zrUtil.each(seriesList, function(seriesItem, idx) {
+                if (payload[0].seriesIndex === seriesItem.seriesIndex) {
+                    series = seriesItem;
+                }
+            });
             var params = series.getDataParams(payload[0].dataIndexInside);
 
             if (!minNotChange) {
