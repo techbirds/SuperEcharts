@@ -979,7 +979,7 @@ require('../../echarts').extendComponentView({
         var baseAxis = coordSys.getBaseAxis();
         var baseDimIndex = baseAxis.dim === 'x' || baseAxis.dim === 'radius' ? 0 : 1;
 
-        var payloadBatch = zrUtil.map(seriesList, function(series) {
+        var payloadBatch = zrUtil.map(seriesList, function(series, index) {
             return {
                 seriesIndex: series.seriesIndex,
                 dataIndexInside: series.getAxisTooltipDataIndex ?
@@ -1065,9 +1065,14 @@ require('../../echarts').extendComponentView({
         });
 
         if (baseAxis && rootTooltipModel.get('showContent') && rootTooltipModel.get('show')) {
-            var paramsList = zrUtil.map(seriesList, function(series, index) {
-                return series.getDataParams(payloadBatch[index].dataIndexInside);
+            // 获取最近节点的内容信息并组装成html字符串
+            var series;
+            zrUtil.each(seriesList, function(seriesItem, idx) {
+                if (payload[0].seriesIndex === seriesItem.seriesIndex) {
+                    series = seriesItem;
+                }
             });
+            var params = series.getDataParams(payload[0].dataIndexInside);
 
             if (!minNotChange) {
                 // Update html content
@@ -1081,14 +1086,13 @@ require('../../echarts').extendComponentView({
                     baseAxis.scale.getLabel(value[baseDimIndex]) :
                     seriesList[sampleSeriesIndex].getData().getName(firstDataIndex);
 
-                // 获取最近节点的内容信息并组装成html字符串
-                var series = seriesList[payload[0].seriesIndex];
+
                 var seriesNodeContentHtml = series.formatTooltip(payload[0].dataIndexInside, true)
                 var defaultHtml = (firstLine ? firstLine + '<br />' : '') + seriesNodeContentHtml;
                 var asyncTicket = 'axis_' + coordSys.name + '_' + firstDataIndex;
 
                 this._showTooltipContent(
-                    rootTooltipModel, defaultHtml, paramsList, asyncTicket,
+                    rootTooltipModel, defaultHtml, params, asyncTicket,
                     point[0], point[1], positionExpr, null, api
                 );
             } else {
@@ -1096,7 +1100,7 @@ require('../../echarts').extendComponentView({
                     positionExpr || rootTooltipModel.get('position'),
                     point[0], point[1],
                     rootTooltipModel.get('confine'),
-                    this._tooltipContent, paramsList, null, api
+                    this._tooltipContent, params, null, api
                 );
             }
         }

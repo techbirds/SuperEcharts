@@ -23,7 +23,10 @@
                 text: 'Step Line'
             },
             tooltip: {
-                trigger: 'axis'
+                trigger: 'axis',
+                formatter: function(params) {
+                    return params.data;
+                }
             },
             legend: {
                 data: ['Step Start', 'Step Middle', 'Step End']
